@@ -1,0 +1,26 @@
+# Runtime and generated working outputs
+output/
+input/
+*.log
+
+# Source magazine PDFs and large local originals
+*.pdf
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials or secrets
+secrets/
+*.token
+*.key
+*.pem
+*.p12
+*.json.bak
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini

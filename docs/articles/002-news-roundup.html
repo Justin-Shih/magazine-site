@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>新聞彙整 | News</title>
+  <style>
+:root {
+  --paper: #fbfaf7;
+  --ink: #18212f;
+  --muted: #647084;
+  --line: #d7dddf;
+  --accent: #0b6f78;
+  --accent-2: #8f3f2b;
+  --panel: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", "Microsoft JhengHei", Arial, sans-serif;
+  line-height: 1.7;
+}
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.wrap {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+}
+.masthead {
+  padding: 26px 0 18px;
+}
+.kicker {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+h1, h2, h3 { line-height: 1.25; letter-spacing: 0; }
+h1 { font-size: 32px; margin: 0 0 8px; }
+h2 { font-size: 23px; margin: 0 0 10px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+.subtitle { color: var(--muted); margin: 0; }
+main { padding: 24px 0 54px; }
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: 24px;
+  align-items: start;
+}
+.cover img, figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cover, .toc-card, .article-section, figure {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.cover { overflow: hidden; }
+.toc-card, .article-section { padding: 18px; }
+.toc-section + .toc-section { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 16px; }
+.toc-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.toc-item a {
+  color: var(--ink);
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #edf0f1;
+}
+.title-en { font-weight: 750; }
+.title-zh { color: var(--accent); font-weight: 700; margin-top: 2px; }
+.page-num { color: var(--muted); white-space: nowrap; }
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.media-stack, .inline-figures { display: grid; gap: 14px; }
+.inline-figures {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+figure { margin: 0; overflow: hidden; }
+figcaption { padding: 8px 10px; color: var(--muted); font-size: 13px; }
+.article-section + .article-section { margin-top: 16px; }
+.body-text { white-space: pre-wrap; }
+.summary { font-size: 16px; }
+.meta-row { color: var(--muted); font-size: 14px; margin-top: 8px; }
+.nav { margin-bottom: 14px; }
+.nav a { color: var(--accent); font-weight: 700; text-decoration: none; }
+@media (max-width: 860px) {
+  .grid, .article-layout { grid-template-columns: 1fr; }
+  h1 { font-size: 27px; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap masthead">
+      <p class="kicker">The Source · April 2026 · p.6</p>
+      <h1>新聞彙整<br><span class="title-en">News</span></h1>
+      <p class="subtitle">This section collects short news items on Asian WASH financing, cholera, climate risks, planetary health, insurance gaps, and water stress.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="nav"><a href="../index.html">← 返回目錄 / Back to contents</a></div>
+    <div class="article-layout">
+      <aside class="media-stack">
+        <figure>
+  <img src="../article-assets/002-news-roundup/crops/page-004-wash-services-flood.jpg" alt="News image">
+  <figcaption>wash-services-flood</figcaption>
+</figure><figure>
+  <img src="../article-assets/002-news-roundup/crops/page-004-cholera-outbreak.jpg" alt="News image">
+  <figcaption>cholera-outbreak</figcaption>
+</figure><figure>
+  <img src="../article-assets/002-news-roundup/crops/page-005-temperature-increase.jpg" alt="News image">
+  <figcaption>temperature-increase</figcaption>
+</figure>
+      </aside>
+      <section>
+        <div class="article-section">
+          <h2>中文完整摘要說明</h2>
+          <p class="summary">本新聞彙整涵蓋多個水與環境議題：亞洲 WASH 服務每年仍需龐大投資以回應水安全缺口；剛果民主共和國霍亂疫情達 25 年來最嚴重，凸顯飲水、衛生與醫療服務不足；氣候與環境新聞則包括行星健康投資、極端天氣保險缺口、阿拉伯地區升溫加速、冰川流失與大型城市水壓力。整體而言，這組新聞共同指向水安全、公共衛生、氣候韌性與基礎設施投資之間日益緊密的關聯。</p>
+        </div>
+        <div class="article-section">
+          <h2>中文全文</h2>
+          <div class="body-text">本篇新聞彙整呈現全球水、衛生、健康、氣候與基礎設施領域的多重壓力。首先，亞洲開發銀行的《Asian Water Development Outlook 2025》指出，亞太地區在過去十二年間已有超過 27 億人脫離極端水不安全狀態，但這些進展正受到生態系退化、氣候風險與資金缺口威脅。若要在 2040 年前滿足區域供水、衛生與個人衛生服務需求，每年仍需約 2500 億美元投資。報告強調，濕地、河川、含水層與森林等支撐長期水安全的自然資本正快速惡化；極端天氣、海平面上升、風暴潮與鹽水入侵也正加劇風險。ADB 呼籲恢復生態系健康、強化韌性、改善水治理，並透過混合融資與更具效率的水部門財務模式縮小投資缺口。
+
+第二則新聞指出，新的研究發現，當降雨主要來自陸地蒸發而非海洋水氣時，作物對乾旱更為脆弱。研究團隊利用二十年的衛星資料追蹤大氣水分來源，發現若約三分之一降雨來自土壤、湖泊與森林等陸地來源，農地土壤水分會下降，作物產量也會降低。美國中西部與東非特別暴露於此風險，原因包括土壤乾化與森林砍伐。研究者因此呼籲保護森林並改善土地管理，以降低農業水風險。
+
+公共衛生方面，UNICEF 警告剛果民主共和國正面臨 25 年來最嚴重的霍亂疫情。2025 年通報病例超過 6.4 萬例，死亡近 1900 人，兒童約占四分之一。疫情受限於安全飲水與基本衛生服務不足、東部衝突與流離失所、強降雨與洪水破壞 WASH 基礎設施，以及快速且缺乏規劃的都市化。政府雖已提出 2023-2027 多部門消除霍亂計畫，但資金不足，並另啟動「無霍亂剛果河」倡議，針對港口、船隻衛生、船員與乘客宣導及沿河飲水取得進行改善。
+
+短訊部分包括：美國加州在多年乾旱後首度全州脫離乾旱狀態；歐盟飲用水中 PFAS 的系統性監測與限值規範正式生效；Ramboll 併購北歐水與廢水專業公司 Envidan，擴大全球水業務能力。環境與氣候新聞則指出，UNEP GEO-7 報告認為投資穩定氣候、健康自然與無污染地球，可帶來額外全球 GDP、避免數百萬人死亡並降低貧困與飢餓；WWF 報告警告美國極端天氣正在擴大保險保障缺口，需投資自然解方以降低洪水、熱浪與風暴損害；WMO 首份阿拉伯地區氣候報告指出 2024 年為該區有紀錄以來最熱年份，升溫、熱浪、乾旱、強降雨與風暴正與都市化、衝突、貧困和人口成長交織；冰川研究則預測二十一世紀中葉可能出現冰川消失高峰。最後，城市水安全圖譜顯示全球前一百大城市中有一半面臨高水壓力，並介紹 NX Filtration 與 Jaya Teknik Indonesia 合作、以及 IDE Technologies 獲得孟買海水淡化工程合約等產業消息。整體而言，這組新聞共同說明水安全已與自然資本、公共衛生、氣候韌性、金融保險、城市治理與基礎設施投資緊密相連。</div>
+        </div>
+        
+        <div class="article-section">
+          <h2>Original Full Text</h2>
+          <div class="body-text">aww Uw
+
+ADB report calls for $250 billion a year for Asian WASH services
+
+More than 60% of Asia and the Pacific’s population - about 2.7 billion people - has been lifted from extreme water insecurity over the past 12 years, but these hard-
+
+won gains are threatened by accelerating environmental decline and a major financing gap, according to a new Asian Development Bank (ADB) report.
+
+Asian Water Development Outlook (AWDO) 2025 finds that renewed political commitment, targeted investments and governance reforms since 2013 have driven this progress. But ecosystem decline, climate risks and funding shortfalls for water investments threaten to plunge billions back into water insecurity.
+
+The report highlights that wetlands, rivers, aquifers, and forests that sustain long-term water security are deteriorating fast. With extreme weather events, such as storm surges, rising sea levels and saltwater intrusion threatening a region that already accounts for 41% of the world’s floods.
+
+The AWDO estimates that $4 trillion
+
+Environment
+
+through to 2040 - or $250 billion a year - is needed to meet the region’s water, sanitation and hygiene (WASH) needs alone.
+
+ADB senior director for water and urban development Norio Saito said: “Asia’s water story is a tale of two realities, with monumental achievements on water security coupled with rising risks that could undermine this progress. Without water security, there is no development. This report shows we need to act urgently to restore ecosystem health, strengthen resilience, improve water governance and deploy innovative finance to deliver long-term water security - especially for the neediest communities.”
+
+The region’s steady improvement over the past 12 years is starkly demonstrated in rural India, where 840 million people now have better WASH services, due chiefly to government programmes. In the People’s Republic of China, government investments in flood control, rainfall radar systems and emergency response have significantly enhanced resilience to water-related
+
+Study finds origin of rainfall impacts crop health
+
+disasters. Notable advances have also been made in Cambodia and the Lao People’s Democratic Republic, which have significantly reduced exposure to unsafe drinking water. In Tajikistan, projects supported by initiatives like the United Nations’ Early Warnings for
+
+All have reduced drought exposure and strengthened national flood and storm management systems.
+
+The AWDO notes that progress can be sustained if nature is protected and integrated into water systems through national river health monitoring, stronger pollution controls and better watershed protection. Stronger governance systems that prioritise prevention will improve climate resilience, and water systems will be more effective if subnational bodies are given the resources and authority to manage them. It adds that efforts must be inclusive - engaging women and young people - if investments are to succeed.
+
+The report finds that current spending on WASH infrastructure covers less than 40% of the estimated $250 billion needed every year, leaving an annual shortfall of more than $150 billion. Closing the gap requires deploying finances in smarter ways, including through blended finance that pools public and private resources to reduce project risk and mobilise private capital. Improving the efficiency and financial sustainability of the water sector can also attract private investment.
+
+New research has found that crops are more vulnerable to drought when rainfall originates from the land rather than the ocean.
+
+Researchers from the University of California San Diego, USA, used 20 years of satellite measurements to track atmospheric moisture back to the place where it first evaporated.
+
+The study, published in the journal Nature Sustainability, found that when approximately one third of precipitation originates from land - such as soil, lakes and forests - as
+
+opposed to ocean-derived moisture within large weather systems - such as atmospheric rivers, monsoons and tropical storms - croplands become significantly more susceptible to drought, soil moisture declines and yields drop.
+
+The study found that crops in the Midwest of the USA and East Africa are particularly exposed because of soil drying and deforestation. The researchers call for action to protect forests and improve land management.
+
+It is hoped that this new method for identifying regions at higher risk will improve water and crop management.
+
+© iStock.com / ktsimage
+
+DRC cholera outbreak worst in ae years
+
+Bi
+
+UNICEF has warned of the devastating impact of the worst cholera outbreak in the Democratic Republic of Congo (DRC), with children accounting for nearly one in four cases.
+
+Reporting on the cholera outbreak, UNICEF says that it has had a devastating impact, reaching 64,427 cases in 2025, including 1888 deaths, with children accounting for 14,818 cases and 340 deaths. This has disrupted children’s education, exposing them to illness and forcing them to witness the suffering and loss of family members. In one of the cases reported, 16 of the 62 children living in a Kinshasa orphanage died within days of an outbreak in the group home.
+
+“Congolese children should not be so gravely affected by what is a wholly preventable disease,” said UNICEF DRC representative John Agbor. “UNICEF encourages our government partners to increase investments in water, sanitation, hygiene and health services, especially in established cholera hotspots, to better protect the health and bie seis of Suge families and children.”
+
+Limited access to water and sanitation services continues to drive chalera persistence in the DRC. According to the 2024-2025 Demographic and Health Survey, only 43% of the population uses at least basic water services - the lowest rate in Africa - and just 15% have access to basic sanitation.
+
+The cholera crisis is further compounded by persistent conflict, displacement and insecurity in eastern DRC, which restrict access to health services; acute climate events such as heavy rains and flooding that damage water and sanitation infrastructure; and rapid, unplanned urbanisation that has led to overcrowded cities and overwhelmed water, sanitation, and hygiene (WASH) systems. In areas with little prior exposure to cholera, such as Kinshasa, low disease awareness and delays in care-seeking are contributing to exceptionally high fatality rates.
+
+The government created a national plan to eliminate cholera, known as the Multisectoral Cholera Elimination Plan 2023-2027, which has a proposed budget of $192 million. However, the plan is underfunded and the mid-term evaluation completed in May 2025 calls for increased investments and more robust multisectoral coordination.
+
+In response to the 2025 outbreak, the government also set up the ‘River Congo without cholera’ initiative to tackle the absence of cholera control measures in place at ports, the lack of a sanitation plan for boats, the promotion of awareness among crew members and passengers, and access to drinking water along the river.
+
+In brief
+
+Security
+
+California drought free
+
+Anew map published by the US Drought
+Monitor shows the US state of California
+
+to be free of drought for the first time in
+
+25 years.
+
+Drought in the region over successive years has led to wildfires and impacted the agricultural sector. But above-normal rainfall - with December 2025 being one of the wettest on record for parts of California - has seen reservoir levels, including lakes Shasta and Oroville, rise beyond historic averages.
+
+Health
+
+EU PFAS protections
+
+come into effect
+
+On 12 January new EU-wide rules on drinking water took effect to ensure member states adhere to new
+
+EU limit values for per- and polyfluoroalky| substances (PFAS).
+
+This first systematic monitoring of
+PFAS in drinking water in the EU requires member states to monitor drinking water to ensure compliance and to take measures to reduce PFAS levels in the case of any exceedance of limit values. To protect public health, member states are required to notify the European Commission of raised levels and incidents, as well as informing the public.
+
+Business
+
+Ramboll acquires Envidan
+Ramboll is acquiring Nordic water and wastewater specialist Envidan, adding 500 experts to its global water practice and bolstering the practice in Denmark, Norway, and Sweden. With its three core business areas - consulting, turnkey, and software - the company brings additional capabilities as a technology-driven engineering specialist.
+
+© iStock.com / FrankRamspott
+
+= |)
+
+Environment
+
+Investing in planetary health would
+
+deliver higher GDP
+
+The United Nations Environment Programme (UNEP) report The Global Environment Outlook, Seventh Edition:
+
+A Future We Choose (GEO-7) has found that investing in a stable climate, healthy nature and land, and a pollution-free planet could deliver trillions in additional global GDP, avoid millions of deaths and lift hundreds of millions of people out of poverty and hunger.
+
+The report finds that climate change, biodiversity loss, land degradation, desertification, and pollution and waste have taken a heavy toll on the planet, people and economies - already costing trillions of dollars each year.
+
+However, whole-of-society and
+
+whole-of-government approaches to transform the systems of economy and finance, materials and waste, energy, food and the environment would deliver global macroeconomic benefits that could reach $20 trillion per year by 2070 and continue growing.
+
+A key enabling factor of this approach is moving away from GDP to indicators that also track human and natural capital incentivising economies to move towards circularity, decarbonisation of the energy system, sustainable agriculture and ecosystem restoration.
+
+Inger Andersen, UNEP Executive Director, said: “The Global Environment
+Outlook lays out a simple choice for
+
+humanity: continue down the road to a future devastated by climate change, dwindling nature, degraded land and polluted air, or change direction to secure a healthy planet, healthy people and healthy economies. This is no choice at all.
+
+“And let us not forgot the world has already made so much progress: from global deals covering climate change, nature, land and biodiversity, and pollution and waste, to real-world change in the booming renewables industry, global coverage of protected areas, and the phasing out of toxic chemicals. | call on all nations to build on this progress, invest in planetary health and drive their economies towards a thriving, sustainable future.”
+
+WWE report finds USA exposed to extreme weather insurance gap
+
+Anew report from the World Wildlife Fund (WWF) warns that extreme weather events in the USA are creating an
+
+been the hardest hit, with some communities facing skyrocketing premiums or no coverage at all.
+
+Climate |
+
+Temperature increase
+Is accelerating in
+
+Arab region
+
+The Arab region had its hottest year on record in 2024, and the rate of warming has accelerated in recent decades, accompanied by more intense heatwaves and droughts as well as extreme rainfall and storms, according to the inaugural World Meteorological Organization (WMO) report on the State of the Climate in the Arab Region 2024.
+The report states that these climate
+
+insurance crisis.
+
+Tackling The Insurance Protection Gap addresses the
+
+widening of the insurance gap - the difference between total economic losses and insured losses from extreme weather events - and finds that because of the increased frequency and severity of extreme weather, which is leaving millions of households and businesses financially exposed, investment must be made in nature-based solutions to deliver cost-effective protection against floods, heat and storms.
+
+Developed by WWF with input from insurers, regulators,
+
+and academic and financial experts, the report examines how climate and nature risks are reshaping insurance markets and outlines a roadmap for safeguarding households, businesses and public finances.
+
+Key findings highlighted in the report include:
+
+Surging uninsured losses: In 2024, global losses from natural disasters reached $318 billion, yet only about onethird of these losses were insured. In the USA, uninsured losses are rising in size and geographic reach as insurers retreat from high-risk areas.
+
+Risk to homeowners: More than 1.9 million home insurance policies have not been renewed in the USA since 2018. States such as California, Florida, and Louisiana have
+
+@ Deepening protection gap: The share of uninsured homes in the USA has more than doubled, from 5% in 2019 to 12% in 2025, as rising climate risk and market dynamics combine to limit the private insurance sector’s ability to close this gap.
+
+@ Public budgets under strain: Without insurance, homes become un-mortgageable, property values plummet and state budgets suffer. Government disaster relief spending in the USA exceeded $110 billion in 2024, diverting resources from long-term resilience investments.
+
+@ Nature can mitigate risk: Healthy ecosystems materially reduce flood, heat and storm damages and can outperform engineered defences on a cost basis. However, these risk-reducing ecosystem services are rarely valued in loss estimates or integrated into insurance pricing, despite evidence that every $1 invested in climate resilience can save up to $13 in avoided losses.
+
+The report calls for urgent action to invest in nature-
+
+based solutions that deliver cost-effective protections
+
+against extreme weather; the modernisation of insurance
+
+regulation with additional oversight and incentives for improving nature-based resilience; and an expansion of public-private partnerships for disaster coverage, tied to risk reduction measures.
+
+threats intersect with ongoing socioeconomic challenges such as rapid urbanisation, conflict, poverty and population growth, highlighting the
+
+urgent need to build resilience, invest in
+
+risk reduction and water security.
+The State of the Climate in
+
+the Arab Region 2024 report was
+
+compiled by the WMO in partnership
+
+with the Economic and Social
+
+Commission for Western Asia and
+
+© iStock.com / amyai
+
+the League of Arab States to inform decision-making in a climate vulnerable region that counts 15 of the world’s most water-scarce countries.
+
+Researchers warn of rapid mid-century glacial loss
+
+New research predicts that glacier extinction will peak in the middle of the 21st century.
+
+The study, led by researchers from ETH Zurich, Switzerland, published in the journal Nature Climate Change, used three global glacier models to quantify the loss of
+
+More than 200,000
+
+8 glaciers included in the @ global Randolph Glacier
+
+= Inventory. The study focused
+
+E on four global warming scenarios
+
+&lt; by 2100 relative to pre-industrial levels &amp; of +1.5°C and +2.0°C (reflecting the
+
+© Paris Agreement targets), +2.7 °C (based
+
+on current policy pledges), and +4.0°C (predicting a higher-emission pathway).
+The research projects the global loss of -2,000 », glaciers per year in 2041 under a warming scenario of +1.5°C,
+
+4 to ~4,000 per &gt; year under the +4.0 °C scenario.
+At peak glacier extinction, aa the models predict a rate of loss equivalent to losing the entire glacier population of the European Alps ina single year. This rate of loss is three to five times greater than that suggested by previous models.
+
+, with losses increasing
+
+Resilience
+
+Atlas identifies cities in water stress
+New analysis has found that half the
+
+world’s 100 largest cities are experiencing high water stress.
+
+The findings result from city mapping by
+Watershed Investigations and The Guardian newspaper. Separate analysis of NASA satellite data, compiled by scientists at University College London, UK, shows which of the largest 100 cities have been drying or getting wetter over the past two decades.
+
+All 100 cities and their trends can be viewed on a new interactive water security atlas at bit.ly/4swBjf7
+
+Business
+
+NX Filtration partners with Jaya
+Teknik Indonesia
+
+System integrator Jaya Teknik Indonesia has selected NX Filtration to supply ultrafiltration (UF) modules for its largescale 5 MLD Ancol seawater reverse osmosis plant in Jakarta, Indonesia. The UF solution will reinforce the plant’s pre-treatment performance, supporting long-term membrane protection and stable freshwater production for the wider Ancol tourism district.
+
+Business
+
+IDE Technologies awarded Mumbai desalination contract IDE Technologies, a global provider of desalination and water treatment solutions, has been awarded a major Engineering, Procurement and Construction (EPC) contract by the Brihanmumbai Municipal Corporation (BMC) to design and build a large seawater reverse osmosis (SWROQ) desalination plant at Manori, Mumbai, India. The project - which will deliver 200 million litres of climate-resilient drinking water per day, with infrastructure designed to double capacity - will also include a long-term operations and maintenance agreement, under which IDE will operate and maintain the facility for 20 years, ensuring reliable delivery of high-quality drinking water to India’s financial capital.</div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

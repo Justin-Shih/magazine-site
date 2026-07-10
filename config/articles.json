@@ -1,0 +1,1678 @@
+{
+  "source_pdf": "../Source April 2026.pdf",
+  "magazine": "Source",
+  "issue": "April 2026",
+  "site_title": "Source April 2026 雙語雜誌筆記",
+  "notebook_title": "Source April 2026 - Selected Articles",
+  "phases": [
+    {
+      "id": 1,
+      "title_zh": "固定專欄與前置內容",
+      "title_en": "Regulars and front matter",
+      "magazine_pages": "1-12",
+      "notes": "先處理封面、目錄、會長專欄與前段固定內容。"
+    },
+    {
+      "id": 2,
+      "title_zh": "資源、IWA 與衛生專題",
+      "title_en": "Resources, IWA, and sanitation",
+      "magazine_pages": "13-26",
+      "notes": "處理水資源、青年領袖與衛生相關文章。"
+    },
+    {
+      "id": 3,
+      "title_zh": "歐洲、治理會員與發展",
+      "title_en": "Europe, governing member, and development",
+      "magazine_pages": "27-40",
+      "notes": "處理區域、治理與發展主題。"
+    },
+    {
+      "id": 4,
+      "title_zh": "活動、觀點與健康",
+      "title_en": "Event, viewpoint, and health",
+      "magazine_pages": "41-46",
+      "notes": "處理活動預告、觀點評論與健康案例。"
+    },
+    {
+      "id": 5,
+      "title_zh": "解決方案、研究創新與閱讀活動",
+      "title_en": "Solutions, research, and events",
+      "magazine_pages": "47-50",
+      "notes": "處理後段解決方案、研究創新與閱讀活動。"
+    }
+  ],
+  "selection_rules": {
+    "include_keywords": [],
+    "exclude_keywords": [],
+    "notes": "MVP uses manual page ranges. Add keywords here later for assisted filtering."
+  },
+  "articles": [
+    {
+      "id": "future-focused-feeling",
+      "phase": 1,
+      "title": "A future-focused feeling",
+      "title_en": "A future-focused feeling",
+      "title_zh": "面向未來的感受",
+      "pages": "3",
+      "magazine_page": "5",
+      "crops": [
+        {
+          "page": 3,
+          "label": "article-area",
+          "kind": "text",
+          "bbox_percent": [
+            52,
+            5,
+            98,
+            96
+          ],
+          "note": "Right-side article area on PDF page 3."
+        }
+      ],
+      "display_images": [
+        {
+          "page": 3,
+          "label": "portrait",
+          "kind": "image",
+          "bbox_percent": [
+            55,
+            7,
+            70,
+            32
+          ],
+          "note": "Portrait image only; text scan is not displayed on article page."
+        }
+      ],
+      "tags": [
+        "iwa",
+        "governance",
+        "events",
+        "water-security"
+      ],
+      "why_selected": "IWA President Hamanth Kasan outlines how major IWA and UN water events connect to water security, sanitation, governance, financing, and practitioner engagement.",
+      "full_text_zh": "作為 IWA 會長，我深知自己處在一個非常幸運的位置，能夠協助引導這個卓越組織向前發展。最近在泰國曼谷舉辦、非常成功的 Water and Development Congress & Exhibition，讓我不只是知道自己有多幸運，也真切感受到這份幸運。\n\n我之所以有這樣的感受，一部分來自活動議程與企圖心的深度和廣度。這場大會聚集了來自世界各地的數千名參與者，他們帶著敏銳的思考與堅定的意志，希望推動全球南方的生活轉型。\n\n另一個原因，是我們在曼谷看見了龐大的支持。這場活動由亞洲理工學院共同主辦，並得到亞洲開發銀行、世界銀行與南非 Water Research Commission 等重要夥伴參與。這些合作凸顯了 IWA 在全球水領域中連結組織與實務社群的能力。\n\n活動本身也非常切合區域需求。IWA 的大會雖然具有國際性，但曼谷這一屆特別呼應了區域關切。大會主題「水、衛生與創新：通往進步與韌性未來的路徑」，非常符合該區域正在面對的水與衛生挑戰。這些挑戰受到氣候變遷與天然災害加劇，但同時也促使相關社群決心創新，並與世界各地面臨類似問題的人分享知識。\n\n在此基礎上，IWA 董事會成員與我都感受到外界對 IWA 角色、貢獻與領導力日益增強的信心。因此，我特別振奮的是，在曼谷閉幕典禮中，我們宣布 IWA 將於 2027 年初在南非舉辦專門的 Global Sanitation Summit。此外，大會期間也舉辦了一場高階峰會，其關鍵訊息被整理成「IWA Bangkok Communique on Water Security and Resilience」，作為強化水安全與韌性的共同方向與參考。\n\nGlobal Sanitation Summit 與 Bangkok Communique 這兩個例子，讓我期待能再次感受到在曼谷所體驗到的幸運與動能。\n\n我也知道，當我今年稍晚參加英國 Glasgow 的 World Water Congress & Exhibition 時，將再次感到非常幸運。明年初的 Global Sanitation Summit 會為 IWA 的全球活動計畫增加重要的衛生面向。\n\n至於 Bangkok Communique，下一場專門的 UN Water Conference 預計於今年年底舉行。該會議的高階籌備會議已於一月在塞內加爾 Dakar 舉辦。IWA 團隊也參與其中，包括執行長 Kala Vairavamoorthy 在全體會議中發言。Dakar 是讓 Bangkok Communique 獲得曝光的理想場域，會議討論顯示該公報的行動呼籲與年底 UN Water Conference 前正在形成的動能相互呼應。\n\nDakar 會議也讓 IWA 有機會指出，Glasgow Congress 可以成為一個平台，讓實務工作者接觸將被帶入 UN Water Conference 的主題與選項。Glasgow 也將安排聚焦融資與水部門治理角色的高階峰會，因此 IWA 能夠提供實務視角，既相關也及時。\n\n目前這波動能意味著 2027 年及其後有豐富的可能性。隨著節奏加快，IWA 與其網絡已準備好做出貢獻。再加上我們能夠連結抱持相同承諾的組織，我相信我們能協助影響成果。\n\nIWA 的這種廣泛貢獻不像單一活動那樣清楚可見，但同樣重要。我相信 IWA 董事會、治理大會、管理團隊、會員與夥伴都有許多值得期待之處，我能真切感受到這一點。",
+      "summary_zh": "IWA 會長 Hamanth Kasan 回顧曼谷 Water and Development Congress & Exhibition 帶來的動能，指出該活動不僅聚集全球水與衛生領域的參與者，也展現 IWA 連結亞洲理工學院、亞洲開發銀行、世界銀行與南非 Water Research Commission 等夥伴的能力。文章強調曼谷大會主題「水、衛生與創新：通往進步與韌性未來的路徑」切合全球南方在氣候變遷、天然災害與衛生挑戰下的需求。作者特別提到兩個後續重點：IWA 將於 2027 年初在南非舉辦 Global Sanitation Summit，以及「IWA Bangkok Communique on Water Security and Resilience」可作為強化水安全與韌性的共同方向。文章也連結年底 UN Water Conference、Dakar 籌備會議與即將在 Glasgow 舉辦的 World Water Congress & Exhibition，指出 IWA 可在治理、融資與實務界參與上提供及時貢獻。",
+      "key_points_zh": [
+        "曼谷 Water and Development Congress & Exhibition 展現 IWA 連結全球夥伴與實務社群的能力。",
+        "大會主題呼應全球南方面對的水、衛生、氣候與災害挑戰。",
+        "IWA 將在 2027 年初於南非舉辦 Global Sanitation Summit，擴大全球活動計畫的衛生面向。",
+        "Bangkok Communique 可作為水安全與韌性的共同方向，並銜接年底 UN Water Conference。",
+        "Glasgow World Water Congress & Exhibition 將提供治理、融資與實務議題的曝光平台。"
+      ]
+    },
+    {
+      "id": "news-roundup",
+      "phase": 1,
+      "title": "News",
+      "title_en": "News",
+      "title_zh": "新聞彙整",
+      "pages": "4-5",
+      "magazine_page": "6",
+      "crops": [
+        {
+          "page": 4,
+          "label": "news-text-p6-p7",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            7,
+            98,
+            96
+          ]
+        },
+        {
+          "page": 5,
+          "label": "news-text-p8-p9",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            7,
+            98,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 4,
+          "label": "wash-services-flood",
+          "kind": "image",
+          "bbox_percent": [
+            3,
+            54,
+            47,
+            66
+          ]
+        },
+        {
+          "page": 4,
+          "label": "cholera-outbreak",
+          "kind": "image",
+          "bbox_percent": [
+            55,
+            18,
+            84,
+            46
+          ]
+        },
+        {
+          "page": 5,
+          "label": "temperature-increase",
+          "kind": "image",
+          "bbox_percent": [
+            69,
+            22,
+            84,
+            47
+          ]
+        }
+      ],
+      "tags": [
+        "news",
+        "water-security",
+        "health",
+        "climate"
+      ],
+      "why_selected": "This section collects short news items on Asian WASH financing, cholera, climate risks, planetary health, insurance gaps, and water stress.",
+      "summary_zh": "本新聞彙整涵蓋多個水與環境議題：亞洲 WASH 服務每年仍需龐大投資以回應水安全缺口；剛果民主共和國霍亂疫情達 25 年來最嚴重，凸顯飲水、衛生與醫療服務不足；氣候與環境新聞則包括行星健康投資、極端天氣保險缺口、阿拉伯地區升溫加速、冰川流失與大型城市水壓力。整體而言，這組新聞共同指向水安全、公共衛生、氣候韌性與基礎設施投資之間日益緊密的關聯。",
+      "full_text_zh": "本篇新聞彙整呈現全球水、衛生、健康、氣候與基礎設施領域的多重壓力。首先，亞洲開發銀行的《Asian Water Development Outlook 2025》指出，亞太地區在過去十二年間已有超過 27 億人脫離極端水不安全狀態，但這些進展正受到生態系退化、氣候風險與資金缺口威脅。若要在 2040 年前滿足區域供水、衛生與個人衛生服務需求，每年仍需約 2500 億美元投資。報告強調，濕地、河川、含水層與森林等支撐長期水安全的自然資本正快速惡化；極端天氣、海平面上升、風暴潮與鹽水入侵也正加劇風險。ADB 呼籲恢復生態系健康、強化韌性、改善水治理，並透過混合融資與更具效率的水部門財務模式縮小投資缺口。\n\n第二則新聞指出，新的研究發現，當降雨主要來自陸地蒸發而非海洋水氣時，作物對乾旱更為脆弱。研究團隊利用二十年的衛星資料追蹤大氣水分來源，發現若約三分之一降雨來自土壤、湖泊與森林等陸地來源，農地土壤水分會下降，作物產量也會降低。美國中西部與東非特別暴露於此風險，原因包括土壤乾化與森林砍伐。研究者因此呼籲保護森林並改善土地管理，以降低農業水風險。\n\n公共衛生方面，UNICEF 警告剛果民主共和國正面臨 25 年來最嚴重的霍亂疫情。2025 年通報病例超過 6.4 萬例，死亡近 1900 人，兒童約占四分之一。疫情受限於安全飲水與基本衛生服務不足、東部衝突與流離失所、強降雨與洪水破壞 WASH 基礎設施，以及快速且缺乏規劃的都市化。政府雖已提出 2023-2027 多部門消除霍亂計畫，但資金不足，並另啟動「無霍亂剛果河」倡議，針對港口、船隻衛生、船員與乘客宣導及沿河飲水取得進行改善。\n\n短訊部分包括：美國加州在多年乾旱後首度全州脫離乾旱狀態；歐盟飲用水中 PFAS 的系統性監測與限值規範正式生效；Ramboll 併購北歐水與廢水專業公司 Envidan，擴大全球水業務能力。環境與氣候新聞則指出，UNEP GEO-7 報告認為投資穩定氣候、健康自然與無污染地球，可帶來額外全球 GDP、避免數百萬人死亡並降低貧困與飢餓；WWF 報告警告美國極端天氣正在擴大保險保障缺口，需投資自然解方以降低洪水、熱浪與風暴損害；WMO 首份阿拉伯地區氣候報告指出 2024 年為該區有紀錄以來最熱年份，升溫、熱浪、乾旱、強降雨與風暴正與都市化、衝突、貧困和人口成長交織；冰川研究則預測二十一世紀中葉可能出現冰川消失高峰。最後，城市水安全圖譜顯示全球前一百大城市中有一半面臨高水壓力，並介紹 NX Filtration 與 Jaya Teknik Indonesia 合作、以及 IDE Technologies 獲得孟買海水淡化工程合約等產業消息。整體而言，這組新聞共同說明水安全已與自然資本、公共衛生、氣候韌性、金融保險、城市治理與基礎設施投資緊密相連。"
+    },
+    {
+      "id": "waters-role-sustaining-planet",
+      "phase": 1,
+      "title": "Water's role in sustaining the planet",
+      "title_en": "Water's role in sustaining the planet",
+      "title_zh": "水在維繫地球永續中的角色",
+      "pages": "6",
+      "magazine_page": "10",
+      "crops": [
+        {
+          "page": 6,
+          "label": "editorial-text",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            7,
+            50,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 6,
+          "label": "editor-portrait",
+          "kind": "image",
+          "bbox_percent": [
+            4,
+            10,
+            9,
+            18
+          ]
+        }
+      ],
+      "tags": [
+        "editorial",
+        "water",
+        "planetary-health",
+        "sustainability"
+      ],
+      "why_selected": "The editorial frames water as a central connector across economy, nature, climate, biodiversity, food, and pollution.",
+      "summary_zh": "本篇編輯室文章以 UNEP Global Environment Outlook 的觀點為基礎，指出水在地球永續中的角色常被低估。文章強調，目前的發展路徑不可持續，環境行動不是反成長，而是轉向健康地球、健康人群與健康經濟的必要選擇。作者指出，水與經濟、金融、自然資本、能源轉型、糧食系統、循環經濟、氣候變遷、生物多樣性、污染與地方調適都密切相連，因此水專業社群應主動把這些議題串接起來，建立跨領域合作與共同語言。",
+      "full_text_zh": "本文以 UNEP 最新《Global Environment Outlook》為起點，指出這份由 82 個國家、287 位跨領域科學家共同編寫的評估，對當前全球環境前景提出嚴肅警訊，同時也明確指出改變方向的機會。報告一方面以全球 GDP 的角度說明轉型的經濟潛力，估計到 2070 年每年可為全球經濟帶來約 20 兆美元效益；另一方面也強調目前發展路徑將導致災難性氣候變遷、自然與生物多樣性破壞、土地退化與荒漠化，以及持續致命的污染。換言之，目前軌道並不可持續。\n\n從水的角度看，GEO-7 的淡水章節列出多項令人憂慮的指標，包括水資源可用量、取水量、乾旱、氣候變遷衝擊、來自多種來源的污染、生物多樣性喪失，以及灌溉對水系統造成的壓力。不過報告的核心目的並非只羅列風險，而是指出透過社會關鍵系統的根本轉型，仍可能走向不同未來。報告提出五個轉型領域：經濟與金融系統需要把外部成本納入決策，並轉向自然正向經濟；材料與廢棄物系統需要追求循環性與資源效率；能源系統需要多元化與去碳化；食物系統需要提高韌性並增強循環性；環境領域則需要恢復自然資本，並廣泛採用自然解方。\n\n值得注意的是，水並不是報告前瞻議程中最外顯的主角，卻橫跨上述五大領域。水牽涉經濟與金融系統中尚未被定價的外部性，也牽涉生物經濟可能造成的負面影響；自然解方能帶來能源與災害風險降低效益；食物系統則與用水需求、水污染和灌溉壓力高度相關。在氣候變遷下，快速擴大地方主導的調適與災害風險管理，也離不開水資源治理。\n\n因此，水領域的任務不是只在自己的專業框架中談水，而是主動找出水與經濟、金融、材料、能源、食物、自然資本與氣候韌性的交會點；透過這些交會點影響政策議程、建立跨部門聯盟，並確保各項轉型不會彼此脫節。這正是跳出部門孤島工作的樣貌。若能如此，水就不只是被動承受環境危機的部門，也能成為實現報告副標題所說「現在投資地球，為所有人創造兆美元效益」的重要路徑。"
+    },
+    {
+      "id": "iwa-news-roundup",
+      "phase": 1,
+      "title": "IWA News",
+      "title_en": "IWA News",
+      "title_zh": "IWA 新聞",
+      "pages": "7",
+      "magazine_page": "12",
+      "crops": [
+        {
+          "page": 7,
+          "label": "iwa-news-text",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            6,
+            50,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 7,
+          "label": "water-development-awards",
+          "kind": "image",
+          "bbox_percent": [
+            18,
+            46,
+            47,
+            68
+          ]
+        }
+      ],
+      "tags": [
+        "iwa-news",
+        "awards",
+        "young-water-professionals",
+        "un-water-conference"
+      ],
+      "why_selected": "This section captures IWA organizational updates, awards, young water professionals, sanitation systems, and UN Water Conference preparation.",
+      "summary_zh": "IWA News 收錄多則組織動態，包括 Rwanda Young Water Professionals Chapter 獲選年度分會、Water and Development Awards 表揚在研究與實務上有突出貢獻的專業人士、Next Generation Sanitation Systems 專案推進低中收入國家的實用衛生方案，以及 Dakar 籌備會議為 2026 United Nations Water Conference 鋪路。這些消息共同呈現 IWA 在青年參與、專業獎項、衛生創新與全球水政策議程上的推動角色。",
+      "full_text_zh": "本篇 IWA News 彙整多項組織與社群動態。首先，IWA Young Water Professionals 社群持續擴展，Rwanda Young Water Professionals Chapter 的成立代表青年水專業人員網絡在非洲進一步深化。這類國家分會不只是聯誼平台，也為青年專業人員提供培力、知識交流、專案合作與國際連結的入口，有助於把地方水議題與 IWA 全球網絡連接起來。\n\n其次，IWA Water and Development Awards 相關訊息凸顯水與發展領域的實務創新。這些獎項肯定在水、衛生、韌性、服務提供與社會影響方面做出貢獻的團隊與個人，也提醒水部門的進展往往來自跨部門合作、地方實驗與能被複製的實務經驗。獎項與會議活動共同形成一個知識流通場域，讓成功案例能被更多地區理解與採用。\n\n文章也提到 Next Generation Sanitation Systems 相關工作，說明未來衛生服務不應侷限於傳統下水道思維，而需要更彈性、可擴展、能回應不同城市與社區條件的系統。這與 IWA 近年推動包容性城市衛生、非下水道衛生服務與資源回收的方向一致，也呼應全球仍未達成 SDG 6.2 與 6.3 的現實。\n\n最後，IWA 也持續參與 UN Water Conference 的籌備與國際政策對話。Dakar 的高階籌備會議、Bangkok Communique，以及即將舉行的 World Water Congress & Exhibition，都為 IWA 提供把實務經驗帶入國際議程的機會。整體來看，本篇新聞呈現 IWA 在青年培力、獎項與知識交流、衛生創新、以及全球政策對話中的多重角色：一方面支持地方社群與專業人才成長，另一方面把這些經驗連結到更廣泛的水安全、衛生、治理與韌性議題。"
+    },
+    {
+      "id": "circular-horticultural-water-management",
+      "phase": 2,
+      "title": "Taking a circular approach to horticultural water management",
+      "title_en": "Taking a circular approach to horticultural water management",
+      "title_zh": "以循環方式管理園藝用水",
+      "pages": "7-9",
+      "magazine_page": "13",
+      "crops": [
+        {
+          "page": 7,
+          "label": "article-text-p13-title-intro",
+          "kind": "text",
+          "bbox_percent": [
+            52,
+            26,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 8,
+          "label": "article-text-p14-groundwater-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            40,
+            31,
+            75
+          ]
+        },
+        {
+          "page": 8,
+          "label": "article-text-p14-groundwater-right",
+          "kind": "text",
+          "bbox_percent": [
+            32,
+            40,
+            49,
+            75
+          ]
+        },
+        {
+          "page": 8,
+          "label": "article-text-p15-quality-top",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            32,
+            68,
+            55
+          ]
+        },
+        {
+          "page": 8,
+          "label": "article-text-p15-quality-right",
+          "kind": "text",
+          "bbox_percent": [
+            76,
+            10,
+            98,
+            53
+          ]
+        },
+        {
+          "page": 8,
+          "label": "article-text-p15-optimising-intro",
+          "kind": "text",
+          "bbox_percent": [
+            76,
+            30,
+            98,
+            55
+          ]
+        },
+        {
+          "page": 9,
+          "label": "article-text-p16-optimising-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            10,
+            31,
+            74
+          ]
+        },
+        {
+          "page": 9,
+          "label": "article-text-p16-governance-right",
+          "kind": "text",
+          "bbox_percent": [
+            32,
+            10,
+            49,
+            74
+          ]
+        },
+        {
+          "page": 9,
+          "label": "article-text-p17-conclusion-left",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            10,
+            72,
+            76
+          ]
+        },
+        {
+          "page": 9,
+          "label": "article-text-p17-conclusion-right",
+          "kind": "text",
+          "bbox_percent": [
+            76,
+            10,
+            98,
+            60
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 7,
+          "label": "greenhouse",
+          "kind": "image",
+          "bbox_percent": [
+            50,
+            0,
+            84,
+            29
+          ]
+        }
+      ],
+      "table_images": [
+        {
+          "page": 8,
+          "label": "figure-1-water-sharing-model",
+          "kind": "table",
+          "bbox_percent": [
+            4,
+            14,
+            49,
+            40
+          ]
+        },
+        {
+          "page": 8,
+          "label": "figure-2-grid-resolution",
+          "kind": "table",
+          "bbox_percent": [
+            3,
+            76,
+            50,
+            94
+          ]
+        },
+        {
+          "page": 8,
+          "label": "figure-3-counterion-transport",
+          "kind": "table",
+          "bbox_percent": [
+            55,
+            13,
+            68,
+            32
+          ]
+        },
+        {
+          "page": 8,
+          "label": "figure-4-optimisation-framework",
+          "kind": "table",
+          "bbox_percent": [
+            65,
+            56,
+            96,
+            94
+          ]
+        },
+        {
+          "page": 9,
+          "label": "figure-5-governance-pathways",
+          "kind": "table",
+          "bbox_percent": [
+            5,
+            78,
+            49,
+            94
+          ]
+        }
+      ],
+      "remove_ocr_patterns": [
+        "^.*?Taking a circular approach to horticultural water management",
+        "^.*?the background Credit: Siebe Swart",
+        "Figure\\s+\\d+\\..*?(?=Managing groundwater|Ensuring water quality|Optimising network|Water governance|Together, these findings|$)",
+        "\\bGrid size:.*?(?=Water quality|Counterion transport|Optimising network|$)",
+        "\\bA[0-9A-Za-z]+\\s*=.*?(?=Water quality|Counterion transport|Optimising network|$)",
+        "\\b70000\\s+75000.*?(?=x \\(meters\\)|Counterion transport|$)",
+        "\\bx \\(meters\\).*?(?=Counterion transport|Optimising network|$)",
+        "\\bInputs:.*?(?=Outputs:|Performance indicators|At the design|$)",
+        "\\bOutputs:.*?(?=Infrastructure constraints|Operational setpoints|Performance indicators|At the design|$)",
+        "\\bDesign level \\(years/months\\).*?(?=At the design|$)"
+      ],
+      "tags": [
+        "resources",
+        "horticulture",
+        "water-management",
+        "circular-water"
+      ],
+      "why_selected": "This article discusses AquaConnect and Dutch research on circular, resilient water systems for greenhouse horticulture.",
+      "summary_zh": "本文介紹荷蘭溫室園藝面臨的水資源壓力，以及 AquaConnect 計畫如何把雨水、地下水、淡鹹水處理、廢水回收與地表/地下儲水整合成一套區域水共享系統。文章指出，循環用水不能只靠單一技術，還必須同時管理地下水鹽化風險、水質與養分累積、跨尺度儲水與網路調度，以及治理與法規安排。多項荷蘭研究案例顯示，精細地下水模型、選擇性電滲析膜、儲水網路最佳化與參與式治理工具，可以協助園藝產業減少對外部淡水的依賴，並在氣候變遷、乾旱與用水競爭加劇下建立更具韌性的水管理模式。",
+      "full_text_zh": "荷蘭南荷蘭地區的溫室園藝是高度集約的農業系統，生產蔬菜、花卉與觀賞植物供應全球市場，因此需要穩定且品質良好的灌溉用水。過去，溫室多仰賴屋頂收集雨水並儲存在開放水池中，乾旱時再以地下水抽取補充。然而，儲水池容量有限、地下水抽取增加、地層下陷與鹽化風險上升，使這套做法逐漸承受壓力。同時，城市、工業、自然保育與農業都在同一區域水系中競爭水源，氣候變遷又進一步放大乾旱與水量波動。園藝部門若要維持生產，就需要從線性取水轉向循環、共享且可調度的水管理模式。\n\nAquaConnect 計畫提出的核心構想，是把多種替代水源與儲水選項整合進一個協調系統。這個系統包括雨水收集、淡水與鹹水地下水的抽取與處理、廢水再生利用、地表儲水與地下儲水。要讓這種區域性水共享模式真正運作，文章歸納出四個支柱：第一，管理地下水與儲水系統；第二，確保水質與水量可用性；第三，最佳化儲水系統設計、監測與調度；第四，建立治理、法律與合作框架。\n\n在地下水管理方面，過度抽取地下水可能引發鹽水上湧，使鹽分進入淺層淡水含水層與水井，造成灌溉水鹽度升高並危害作物。Utrecht University 的 Thijs Hendrix 使用三維變密度地下水流與鹽分傳輸模型，模擬地下抽水如何影響含水層中的淡鹹水界面。研究顯示，抽水深度與抽水量會改變淡水下滲與鹽水上湧的型態，進而可用來找出較安全的抽水門檻，降低淺層淡水含水層鹽化風險。另一項由 Ignacio Farias 進行的研究比較不同網格解析度對鹽水上湧預測的影響，指出較細緻的模型解析度能捕捉淡水透鏡形成與局部鹽水入侵特徵，這對設計共享地下水系統的安全抽取策略相當重要。\n\n水質也是循環園藝的關鍵問題。溫室會多次重複使用灌溉水以節省資源，但隨時間累積，鈉離子等有害離子會逐漸升高，抑制作物生長。若要延長水的再利用次數，就必須在移除有害離子的同時保留植物所需養分。Wageningen University 的 Alaaeldin Elozeiri 研究以聚電解質多層膜塗佈的電滲析膜，藉由調控離子傳輸，選擇性阻擋二價離子並允許單價離子通過。實驗顯示，離子移動方向會影響選擇性，若方向相反，效果會變弱。這些結果可用來設計更有效的膜技術，協助移除抑制作物生長的離子，並保留有益養分，讓溫室灌溉水循環更穩定。\n\n在區域尺度建立水共享系統，還需要解決網路效率與儲水配置問題。共享系統牽涉許多行動者、不同用水需求、不確定的供水量，以及與能源系統的互動，因此決策需要數學最佳化支援。文章把決策分成三個層級：長期設計層級決定儲水、水管與處理設施的規模與位置；排程層級決定每日或逐日的水流、抽水與分配方式；即時控制層級則依據感測資料與預報調整幫浦、閥門與緊急應變。Delft University of Technology 的 Aliereza Shetaei 建立隨機多目標最佳化框架，用於中央水庫、分散式水箱與含水層儲水組成的混合儲水網路。此框架納入降雨、灌溉需求與能源成本的不確定性，讓規劃者可以比較不同氣候情境下的儲水配置。應用於阿姆斯特丹植物園案例時，乾旱年份的水系統效率在風險中立情境下提升 16%，在風險趨避情境下提升 29%。\n\n最後，技術方案必須搭配治理與法律安排。區域水共享需要農民、供水公司、地方政府、監管機關與其他用水者共同協調，釐清誰能取用何種水源、誰負責儲存與處理、成本如何分攤、風險與責任如何分配。文章強調，若要讓循環園藝水管理可持續，必須把模型、膜技術、基礎設施最佳化與治理工具結合起來，並把地方實驗逐步轉化為可擴展的區域制度。這樣的整合方法能減少對外部淡水的依賴，提高乾旱時的調適能力，也為其他面臨水資源壓力的園藝地區提供參考。"
+    },
+    {
+      "id": "young-leaders-water-landscape",
+      "phase": 2,
+      "title": "Forging the future: How young leaders are reshaping the water landscape",
+      "title_en": "Forging the future: How young leaders are reshaping the water landscape",
+      "title_zh": "鍛造未來：青年領袖如何重塑水領域",
+      "pages": "10-11",
+      "magazine_page": "18",
+      "crops": [
+        {
+          "page": 10,
+          "label": "article-text-p18-p19",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            10,
+            98,
+            96
+          ]
+        },
+        {
+          "page": 11,
+          "label": "article-text-p20-p21",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            10,
+            98,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 10,
+          "label": "emerging-water-leaders",
+          "kind": "image",
+          "bbox_percent": [
+            4,
+            12,
+            47,
+            35
+          ]
+        }
+      ],
+      "tags": [
+        "iwa",
+        "young-leaders",
+        "water-sector",
+        "leadership"
+      ],
+      "why_selected": "This article highlights how the first IWA LeAP cohort developed practical interventions for water sector challenges.",
+      "summary_zh": "本文介紹第一屆 IWA LeAP 青年領袖計畫如何透過三個高影響力專案回應水部門挑戰。文章指出，全球水部門面對氣候變遷、人口成長、都市化與污染等問題，需要的不只是技術解方，也需要具策略視野、協作能力與改變敘事能力的新世代領袖。三個專案分別聚焦青年主導的社區水污染解決方案、兒童與青年水素養課程，以及重新思考 WASH 融資與治理敘事。文章強調，青年領袖的價值不只是提出專案，而是把問題從技術困境轉化為社群擁有、教育驅動與制度變革的行動。",
+      "full_text_zh": "本文介紹第一屆 IWA LeaP 青年領袖計畫如何把領導力培訓轉化為具體的水部門行動。全球水部門正面臨氣候變遷、人口成長、都市化與污染等複雜挑戰，單靠技術方案已不足以回應。水部門需要具備策略視野、協作能力、跨文化溝通能力，以及勇於改變既有敘事的新世代領袖。IWA LeaP 為十二位來自不同背景與地區的青年水專業人員提供十二個月的培力旅程，協助他們建立專業網絡、促進跨國合作，並把領導力落實在真實專案中。\n\n第一個專案 Flow Ripple 把水污染治理從由上而下的技術問題，重新定位為青年主導、社區擁有的地方行動。團隊相信，受水挑戰影響最深的人也應成為解決方案的一部分，因此設計了「透過青年主導的社區型水解方處理水污染」框架，並建立網站、YouTube 訓練資源與部落格，讓地方青年能按步驟推動利害關係人參與、污染診斷與水處理行動。團隊在泰國與中國舉辦青年訓練，學員在課後對社區型水解方與青年角色的理解明顯提升。這個專案也展現團隊在共同所有權、單一而一致的溝通聲音、以及尊重多樣性的訓練設計上取得成長。\n\n第二個專案 The Circle of Water 聚焦水素養與循環水經濟。團隊認為，永續水管理需要社會價值觀改變，而教育是轉型基礎。他們設計面向兒童與青年人的水素養課程，強調水連結生命、健康與正義，並以四組知識為核心：水循環、流域、地下水與水基礎設施等科學與系統知識；社會、政治決策與水質水量之間互動的水社會知識；地方水源、飲用水、污水、雨水與用水型態等地方知識；以及能轉化為實際行動的功能性知識。課程已在 Rwanda 與 Austria 進行試行，並吸引九十多位水專業人員申請擔任志工教練，後續將於 Bolivia、Finland、Rwanda、Saudi Arabia 與 Sierra Leone 推廣。\n\n第三個專案 Who pays for the tap? 重新思考 WASH 融資。團隊指出，普及水、衛生與個人衛生服務的障礙不只是缺錢，更是水的經濟價值長期被低估。透過訪談世界銀行、亞洲開發銀行等機構專家，以及調查青年水專業人員的知識缺口，團隊發現 WASH 投資常因「看不見」而在政治上缺乏吸引力。他們提出「融資是症狀，估值才是疾病」的結論，主張應把水視為推動經濟活動的生產性資產，而不只是基本服務；應從社區自主管理轉向更專業的 WASH 營運；應培養青年專業人員的水經濟能力；也應承認改變敘事本身就是領導工作的核心。\n\n三個專案共同證明，新世代水領導不只是提出解方，而是改變問題被理解的方式。無論是污染控制、水教育或 WASH 融資，LeaP 團隊都把全球性挑戰轉化為可行、地方化且可複製的框架。雖然跨國合作、資金取得與規模化仍是挑戰，但這些挑戰也培養出更具韌性與適應力的領袖。文章最後指出，IWA LeaP不只是在訓練技術人才，更是在建立一個以信任、共同目的與跨地域合作為基礎的全球水專業社群。"
+    },
+    {
+      "id": "beyond-sewers-non-sewered-sanitation",
+      "phase": 2,
+      "title": "Beyond sewers: Empowering utilities for non-sewered sanitation services",
+      "title_en": "Beyond sewers: Empowering utilities for non-sewered sanitation services",
+      "title_zh": "超越下水道：強化公用事業以提供非下水道衛生服務",
+      "pages": "12-14",
+      "magazine_page": "22",
+      "crops": [
+        {
+          "page": 12,
+          "label": "article-text-p22-p23",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            10,
+            98,
+            96
+          ]
+        },
+        {
+          "page": 13,
+          "label": "article-text-p24-p25",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            10,
+            98,
+            96
+          ]
+        },
+        {
+          "page": 14,
+          "label": "article-text-p26",
+          "kind": "text",
+          "bbox_percent": [
+            3,
+            10,
+            49,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 12,
+          "label": "africa-crowd-map",
+          "kind": "image",
+          "bbox_percent": [
+            27,
+            35,
+            49,
+            78
+          ]
+        }
+      ],
+      "tags": [
+        "sanitation",
+        "utilities",
+        "nss",
+        "africa"
+      ],
+      "why_selected": "This article summarizes IWA's Africa Sanitation Dialogue and the need to empower utilities for non-sewered sanitation services.",
+      "summary_zh": "本文整理 IWA 第二屆 Africa Sanitation Dialogue 的重點，主張非下水道衛生服務不應被視為過渡或次等方案，而應納入城市衛生規劃與公用事業責任。文章指出，全球仍未達成 SDG 6.2 與 6.3，許多地區尤其是撒哈拉以南非洲高度依賴非下水道衛生系統，但公用事業常缺乏制度授權、財務能力、協調機制與監管框架。文章透過 Kenya、Senegal、Cameroon、Ethiopia、Malindi 與 Lusaka 等案例，說明公用事業若能取得明確授權、建立夥伴關係、改善融資與服務模式，就能讓非下水道衛生從邊緣方案轉變為可規模化的城市服務。",
+      "full_text_zh": "本文整理 IWA 第二屆 Africa Sanitation Dialogue 的重點，核心訊息是：非下水道衛生服務（non-sewered sanitation services, NSS）不應被視為臨時、次等或只適用於貧困地區的方案，而應被納入城市衛生、公共服務與公用事業管理的正式體系。全球仍有大量人口缺乏安全管理的衛生服務，撒哈拉以南非洲尤其高度依賴非下水道系統。若城市只把下水道視為唯一正式解方，就會忽略大量居民實際使用的現場衛生設施、糞污清運、處理與資源回收需求。\n\n文章指出，NSS 的挑戰橫跨制度、財務、技術與治理。土地權屬不穩、非正式住區快速成長、都市規劃不足、可負擔性限制、監管責任不清，以及公共與私人服務提供者之間缺乏協調，常使糞污管理被排除在正式基礎設施投資之外。公用事業若沒有明確授權、財務工具、服務標準與績效監管，就難以承擔非下水道服務。相反地，若政策能賦予公用事業角色，並讓地方政府、監管機關、私人清運業者、社區與供水/衛生機構共同合作，NSS 就能從邊緣服務轉化為可規模化的城市衛生方案。\n\n多個非洲案例說明這種轉型正在發生。Kenya、Senegal、Cameroon、Ethiopia 等國家的經驗顯示，當公用事業被賦予更明確的衛生服務責任，並透過政策改革、合作平台、資料系統與財務機制支援，就能改善現場衛生設施的管理、糞污收集與處理流程。Malindi 與 Lusaka 等城市案例也顯示，服務模式需要依地方條件調整，並把居民、清運業者、處理設施與監管者納入同一個服務鏈，而不是只建造單一大型基礎設施。\n\n文章也強調，NSS 不只是技術問題，更是服務治理問題。城市需要知道誰負責收集、誰負責運輸、誰負責處理、費用如何收取、補貼如何設計、低收入社區如何被納入，以及如何確保公共衛生與環境安全。這需要跨部門合作，也需要把衛生與住房、供水、固體廢棄物、排水、能源與都市發展連結起來。若缺乏這種整合，非下水道系統容易被視為私人家庭責任，導致最脆弱社群承擔最高風險。\n\n總結來說，文章主張超越下水道中心的思維，讓公用事業成為推動 NSS 的關鍵行動者。未來的城市衛生需要清楚授權、可持續融資、創新服務模式、專業化營運、有效監管與社區參與。唯有如此，非下水道衛生服務才能真正支援 SDG 6.2 與 6.3，並在快速都市化與資源限制下為更多居民提供安全、尊嚴且可負擔的衛生服務。"
+    },
+    {
+      "id": "western-balkans-rethink-water",
+      "phase": 3,
+      "title": "Western Balkans: a region ready to rethink water",
+      "title_en": "Western Balkans: a region ready to rethink water",
+      "title_zh": "西巴爾幹：準備重新思考水的區域",
+      "pages": "14-16",
+      "magazine_page": "27",
+      "crops": [
+        {
+          "page": 14,
+          "label": "europe-text-p27",
+          "kind": "text",
+          "bbox_percent": [
+            54,
+            29,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 15,
+          "label": "europe-text-p28-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            7,
+            49,
+            96
+          ]
+        },
+        {
+          "page": 15,
+          "label": "europe-text-p29-right",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            7,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 16,
+          "label": "europe-text-p30-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            7,
+            49,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 14,
+          "label": "durres-albania",
+          "kind": "image",
+          "bbox_percent": [
+            50,
+            0,
+            100,
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "europe",
+        "western-balkans",
+        "water-governance",
+        "utilities",
+        "iwa"
+      ],
+      "why_selected": "The article frames EU accession as a rare opportunity for the Western Balkans to redesign water systems around resilience, recovery, digital management and regional partnership.",
+      "summary_zh": "本文由 IWA 執行長 Kala Vairavamoorthy 觀察西巴爾幹水部門轉型，指出歐盟入盟進程讓該區域同時面臨壓力與機會。文章強調，西巴爾幹不只是補足基礎設施缺口，更能利用後發優勢，從一開始就把污水處理視為資源回收平台，結合能源、數位化、自然解方、非收益水管理與整合都市水循環。作者也提出 IWA、EWA 與 IAWD 可形成三角合作，連結區域能力建設、歐洲政策影響力與全球技術知識，並特別肯定青年水專業人員在推動轉型中的角色。",
+      "full_text_zh": "本文以作者參與阿爾巴尼亞 Durrës 的 Balkans Joint Conference and Exhibition 為起點，指出西巴爾幹水部門正處在一個少見的關鍵時刻。阿爾巴尼亞、波士尼亞與赫塞哥維納、科索沃、蒙特內哥羅、北馬其頓與塞爾維亞都面臨供水可靠度、非收益水、污水處理、治理能力與投資缺口等挑戰，但它們也同時在歐盟入盟與區域改革進程中，獲得重新設計水系統的契機。\n\n歐盟入盟要求各國符合飲用水品質、污水處理、流域管理與環境保護等廣泛法規。這對水部門而言，是壓縮時間內的大規模轉型。歐盟的 Reform and Growth Facility 透過把資金投資與部門改革、制度強化連結起來，加速這個過程。文章指出，這不只是追上歐洲標準，而是思考未來幾十年水系統如何運作的機會。\n\n作者特別強調「後發者優勢」。歐洲與北美許多水基礎設施是在城市擴張與法規逐步收緊中演化而來，雖然帶來公共衛生與環境效益，但也留下能源密集、集中式、老化且不易回收資源的系統。西巴爾幹許多污水處理廠與網路仍在興建或重新設計，因此可以用當代知識直接建立下一代水系統，把污水視為水、能源、養分與材料的來源，而不只是需要排除的負擔。\n\n文章列舉 Durrës、Skopje、Kramovik、Prishtina 與 Gjilan 等例子，說明區域內已出現面向未來的做法，包括沼氣利用、能源正向污水處理、人工濕地、分區計量與漏水偵測、GIS 資產管理，以及整合供水、污水、雨水與再利用的都市水循環思維。這些做法顯示，水系統轉型需要把技術、治理、財務與制度設計一起考慮。\n\n為支持轉型，作者提出 IWA、European Water Association 與 International Association of Water Service Companies in the Danube River Catchment Area 可建立三角合作。IAWD 具有多瑙河流域公用事業能力建設經驗，EWA 能連結歐洲水政策，IWA 則提供全球研究、創新與實務網絡。文章最後指出，西巴爾幹的青年水專業人員已展現清晰願景與實作能力，他們不只是學習水部門，而是正在參與改造水部門。IWA 應以技術交流、合作與同儕夥伴關係回應這個開放窗口。",
+      "remove_ocr_patterns": [
+        "Durr[ée]s,\\s*Albania\\s*©\\s*iStock\\.com\\s*/\\s*Thomas\\s+Faull\\s*",
+        "®\\s*The author\\s+Kala Vairavamoorthy is CEO of the International Water Association\\s*$",
+        "®\\s*The author\\s+Kala Vairavamoorthy is CEO of the International Water Association",
+        "®\\s*The author\\s*Kala Vairavamoorthy\\s+is CEO of the\\s+International Water Association",
+        "The author\\s*Kala Vairavamoorthy\\s+is CEO of the\\s+International Water Association"
+      ]
+    },
+    {
+      "id": "nepal-water-resources-management",
+      "phase": 3,
+      "title": "Perspectives on water resources management in Nepal",
+      "title_en": "Perspectives on water resources management in Nepal",
+      "title_zh": "尼泊爾水資源管理觀點",
+      "pages": "16-18",
+      "magazine_page": "31",
+      "crops": [
+        {
+          "page": 16,
+          "label": "nepal-text-p31-right",
+          "kind": "text",
+          "bbox_percent": [
+            84,
+            7,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 17,
+          "label": "nepal-text-p32-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            7,
+            49,
+            55
+          ]
+        },
+        {
+          "page": 17,
+          "label": "nepal-text-p33-right",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            45,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 18,
+          "label": "nepal-text-p34-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            31,
+            49,
+            96
+          ]
+        },
+        {
+          "page": 18,
+          "label": "nepal-text-p35-right",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            45,
+            99,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 16,
+          "label": "himalayan-water-resources",
+          "kind": "image",
+          "bbox_percent": [
+            50,
+            0,
+            84,
+            100
+          ]
+        }
+      ],
+      "table_images": [
+        {
+          "page": 17,
+          "label": "table-water-resources-and-governance",
+          "kind": "table",
+          "bbox_percent": [
+            4,
+            8,
+            49,
+            45
+          ]
+        },
+        {
+          "page": 17,
+          "label": "table-hydropower-irrigation",
+          "kind": "table",
+          "bbox_percent": [
+            55,
+            5,
+            99,
+            45
+          ]
+        },
+        {
+          "page": 18,
+          "label": "table-hydropower-wash-sector",
+          "kind": "table",
+          "bbox_percent": [
+            4,
+            7,
+            99,
+            45
+          ]
+        }
+      ],
+      "tags": [
+        "nepal",
+        "governing-member",
+        "water-resources",
+        "hydropower",
+        "wash"
+      ],
+      "why_selected": "Nepal's Governing Member article links Himalayan water resources, climate risk, federal governance, hydropower, irrigation, WASH reform and IWA engagement.",
+      "summary_zh": "本文介紹尼泊爾豐富但高度脆弱的水資源。尼泊爾位於南亞重要河川源頭，擁有充沛降雨、眾多河流與高人均水資源量，但季節變化、儲水不足、治理缺口與氣候變遷造成慢性水不安全。文章說明尼泊爾水治理牽涉聯邦、省與地方多層級機構，也牽涉與印度、孟加拉等下游國家的跨境水外交。尼泊爾同時推進水電、灌溉、供水與衛生改革，並以社區主導模式、青年專業人才與 IWA Governing Member 身分連結全球水治理與山區韌性議題。",
+      "full_text_zh": "尼泊爾位於南亞重要河川系統的源頭，坐落於喜馬拉雅山脈之中。Koshi、Gandaki 與 Karnali 三大流域都是恆河的重要支流，支撐尼泊爾本地以及印度、孟加拉等下游地區數億人的生活。尼泊爾平均年降雨量約 1500 毫米，擁有超過 6000 條河流與溪流，是區域內人均水資源量較高的國家之一。這些水資源支撐農業、生態系、濕地與文化實踐，但季節變化、儲水設施不足與管理缺口，使水安全仍然脆弱。\n\n氣候危機讓挑戰更加嚴峻。喜馬拉雅山區升溫速度高於全球平均，冰川退縮、極端洪水、山崩與乾旱事件更加頻繁。冰湖潰決洪水、季節性河川流量改變與長旱期，不只影響水文，也影響糧食系統、基礎設施與社區安全。尼泊爾的水資源政策因此強調韌性路徑，包括適應性流域管理、氣候智慧型灌溉與災害風險治理。\n\n尼泊爾水治理由多層級制度組成，涉及聯邦部會、省級機關與地方政府。主要河川又與印度及下游孟加拉共享，使跨境水治理具有戰略與敏感性。Koshi、Gandak 與 Mahakali 等協定過去多聚焦水電、灌溉與防洪，往往較少納入地方諮商與公平利益分享。尼泊爾因此主張更廣泛且包容的流域方法，平衡經濟利用、生態保護與沿岸社群權益，並透過 ICIMOD、SAWI 等區域倡議參與科學基礎的水外交。\n\n水電是尼泊爾的重要潛力。近年尼泊爾已逐步達成電力里程碑，並開始向印度輸電，也探索與孟加拉的區域能源貿易。Upper Tamakoshi、Arun-3 與 Upper Karnali 等大型專案讓尼泊爾成為綠色能源出口國的候選者。然而，水電發展也面臨環境影響、社區遷移、地震風險、融資限制與氣候變遷對水文情勢的衝擊。灌溉方面，尼泊爾正擴大設施以提升農業韌性與糧食安全，農民管理灌溉系統仍在全國灌溉面積中扮演重要角色。\n\n供水與衛生方面，尼泊爾憲法保障清潔飲用水與衛生為基本權利。去中心化改革與社區主導模式讓地方團體能管理服務，Melamchi 等大型專案與國際夥伴也提供支持。不過，城市與偏遠社區仍面臨水質、永續性、公平性、間歇供水、老舊基礎設施與地下水枯竭等問題。政府在 2025/26 財政年度提高水供應部預算，聚焦 Kathmandu Valley、氣候韌性系統、都市污水網路與 Karnali lift water supply schemes，但要達成 2030 年普及目標仍需穩定投資與制度改革。\n\n文章最後指出，尼泊爾的社區主導模式、年輕人口結構與大學研究能量，提供水治理創新的基礎。2023 年尼泊爾加入 IWA 成為 Governing Member，象徵其更積極參與全球水對話。尼泊爾可在 IWA 平台上提出山區水塔保護、社區治理、跨境合作上游視角、山區韌性、廢水回收、循環經濟、氣候調適、自然解方與都市水韌性等議題，並透過區域對話促進南亞合作。",
+      "remove_ocr_patterns": [
+        "Table\\s+1:.*?(?=Nepal shares|Hydropower:|$)",
+        "Table\\s+2.*?(?=Hydropower:|Water supply and sanitation|$)",
+        "Table\\s+3:.*?(?=Hydropower:|Water supply and sanitation|$)",
+        "Table\\s+5:.*?(?=A legacy of local leadership|Water supply and sanitation budget|$)",
+        "Table\\s+6:.*?(?=Water supply and sanitation budget|Knowledge, youth|$)",
+        "Table\\s+7:.*?(?=Nepal as an IWA Governing Member|Knowledge, youth|$)",
+        "Sector\\s*\\|\\s*Percentage of total water.*?(?=Nepal shares|Hydropower:|$)",
+        "Water resources: sectoral uses.*?(?=Nepal shares|Hydropower:|$)",
+        "Sector\\s+Percentage of total water withdrawal.*?(?=Hydropower: goldmine|Hydropower|$)",
+        "Agriculture\\s*~?95\\.9%.*?National Disaster Risk Reduction and Management Authority,\\s*2024\\)",
+        "Table\\s+4:\\s*Hydropower development.*?(?=Irrigation development|Water supply and sanitation|$)",
+        "Table\\s+6:\\s*Key features of Nepal.?s WASH sector.*?(?=Water supply and sanitation budget|Knowledge, youth|$)",
+        "Credit:\\s*MoWS,\\s*2025.*?(?=sanitation projects|Knowledge, youth|$)",
+        "®\\s*Authors:.*?Water Center 21 Pahal\\s*$",
+        ",?\\s*as shown in Table\\s+3",
+        "co\\s+2\\s+=.*?Credit:\\s*IWMI\\s*",
+        "Safely Managed Drinking Water\\s*Credit:\\s*IWMI\\s*",
+        "Safely Managed Sanitation\\s*"
+      ]
+    },
+    {
+      "id": "bangkok-water-development-progress",
+      "phase": 3,
+      "title": "Bangkok provides a platform for water and development progress",
+      "title_en": "Bangkok provides a platform for water and development progress",
+      "title_zh": "曼谷為水與發展進展提供平台",
+      "pages": "19-21",
+      "magazine_page": "37",
+      "crops": [
+        {
+          "page": 19,
+          "label": "development-text-p37-right",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            43,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 20,
+          "label": "development-text-p38-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            7,
+            49,
+            96
+          ]
+        },
+        {
+          "page": 20,
+          "label": "development-text-p39-right",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            7,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 21,
+          "label": "development-text-p40-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            7,
+            49,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 19,
+          "label": "wdce-bangkok-venue",
+          "kind": "image",
+          "bbox_percent": [
+            55,
+            5,
+            99,
+            43
+          ]
+        }
+      ],
+      "tags": [
+        "development",
+        "wdce",
+        "bangkok",
+        "water-security",
+        "iwa"
+      ],
+      "why_selected": "The article summarizes IWA's 2025 Water and Development Congress & Exhibition in Bangkok, including themes, awards, forums and youth engagement.",
+      "summary_zh": "本文回顧 IWA 2025 Water and Development Congress & Exhibition 在曼谷舉行的重點。大會以「水、衛生與創新：通往進步與韌性未來的路徑」為主題，聚焦低收入與中等收入國家的創新需求，並與 AIT、ADB、南非 Water Research Commission 與世界銀行等夥伴合作。文章介紹主題軌道、開幕典禮、IWA Water and Development Awards、展覽、High-Level Summit、International Water Regulators Forum、Inclusive Urban Sanitation Forum、Water-Efficient Sanitation Solutions Forum，以及青年水專業人員參與，凸顯曼谷大會作為全球水與發展交流平台的角色。",
+      "full_text_zh": "IWA 2025 Water and Development Congress & Exhibition 於泰國曼谷 Queen Sirikit National Convention Centre 舉行，延續 2023 年 Rwanda Kigali 大會的成果，吸引來自世界各地的代表、展商與參觀者。大會由 Asian Institute of Technology 共同主辦，並與 Asian Development Bank、South Africa's Water Research Commission 與 World Bank 等夥伴合作，主題為「水、衛生與創新：通往進步與韌性未來的路徑」。\n\n文章指出，大會地點與主題具有高度區域意義。亞洲正面臨水相關風險快速升高，包括嚴重洪水、乾旱、風暴與龐大經濟損失。近期 UN 分析指出，亞太地區承擔全球近三分之一的天氣、氣候與水相關災害，且自然災害每年造成巨額成本。ADB 在大會期間發表 Asian Water Development Outlook 2025，也指出亞太地區雖已有超過 27 億人脫離極端水不安全，但生態退化、氣候風險與資金缺口仍威脅既有成果。\n\n大會議程超過一百場，聚焦五大主題軌道：安全飲用水與創新處理供應、污水處理與衛生服務、智慧水管理與規劃、永續公用事業管理與營運，以及長期發展所需的治理與金融系統。主題演講涵蓋替代衛生方案、Sarawak 水能源與永續議程、監管角色、包容性衛生、亞洲水健康議題、全球乾化、水與健康議程，以及災後重建中的科學治理。各場主題演講後也安排公用事業、政策制定者、監管機構、發展夥伴與創新者共同討論實務意涵。\n\n開幕典禮中，IWA Water and Development Awards 頒給三位重要貢獻者。Professor Evan Thomas 因結合研究、技術與企業模式推動可問責且永續的水安全而獲研究獎；Professor Meera Mehta 因推動低收入與中等收入國家的水與衛生治理及金融轉型而獲實務獎；Jay Bhagwan 則因推動 South Africa's Sanitation Technology Enterprise Programme 與非下水道衛生創新而獲表彰。\n\n展覽區是創新、夥伴建立與知識交流的動態平台。解方提供者、公用事業、新創公司與發展組織展示衛生改善、數位轉型、氣候韌性與營運效率等技術與方法。大會也安排多個特別論壇：High-Level Summit on Water Security and Resilience 形成 Bangkok Communiqué，呼籲更具協調性與前瞻性的水安全行動；International Water Regulators Forum 強調監管者在氣候韌性水與衛生系統中的領導角色；Inclusive Urban Sanitation Forum 重申 CWIS 是城市實現 SDG 6.2 的核心框架；Water-Efficient Sanitation Solutions Forum 則推動節水衛生成為氣候韌性與永續城市發展的支柱。\n\n青年水專業人員也是大會的重要力量。2025 Emerging Water Leaders Forum 透過主題演講、World Café、專家座談與專門工作坊，讓青年專業人員交流挑戰、建立全球連結並強化領導能力。文章最後指出，WDCE 2025 展現全球水社群對永續、包容與韌性水與衛生服務的承諾，也為有興趣持續參與的讀者指向 2026 年 Glasgow 的 IWA World Water Congress & Exhibition。",
+      "remove_ocr_patterns": [
+        "®\\s*More information\\s+Read the IWA Bangkok Communiqu[ée].*?adb\\.org/awdo/editions/2025\\s*$"
+      ]
+    },
+    {
+      "id": "let-2026-leading-edge-conference",
+      "phase": 4,
+      "title": "Get set for LET 2026",
+      "title_en": "Get set for LET 2026",
+      "title_zh": "準備迎接 LET 2026",
+      "pages": "21",
+      "magazine_page": "41",
+      "crops": [
+        {
+          "page": 21,
+          "label": "event-text-p41",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            28,
+            99,
+            92
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 21,
+          "label": "houston-skyline",
+          "kind": "image",
+          "bbox_percent": [
+            55,
+            10,
+            84,
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "event",
+        "let-2026",
+        "technology",
+        "water-treatment",
+        "iwa"
+      ],
+      "why_selected": "This event article previews the 20th IWA Leading Edge Conference on Water and Wastewater Technologies in Houston, focusing on resilient water technologies.",
+      "summary_zh": "本文預告 2026 年 6 月 1-5 日將於美國 Houston 舉行的第 20 屆 IWA Leading Edge Conference on Water and Wastewater Technologies。會議主題為「變動世界中的韌性水」，聚焦 PFAS 礦化、數位化與 AI、膜技術、海水淡化與濃鹽水管理、直接飲用水再利用、模組化與分散式污水處理，以及能源中性的固體與污水管理。文章也介紹 Rice University 作為創新場域，強調分子與奈米尺度水技術、電氣化、自動化與去中心化處理對未來安全且可負擔水與衛生服務的重要性。",
+      "full_text_zh": "本文介紹第 20 屆 IWA Leading Edge Conference on Water and Wastewater Technologies，會議將於 2026 年 6 月 1-5 日在美國 Texas, Houston 舉行。2026 年 LET 以「Resilient Water in a Changing World」為主題，延續 2024 年德國 Essen 第 19 屆會議的成果。LET 的特色在於聚焦最前沿的科學、技術創新與領先實務，討論它們如何塑造水管理的重大轉型。\n\n2026 年議程主題包括飲用水、污水、污泥與濃鹽水處理中的 PFAS 礦化技術；數位化、自動化與人工智慧；膜技術與多功能混合系統；海水淡化、能源與濃鹽水管理；改良型直接飲用水再利用；模組化與分散式污水處理；以及先進固體與污水管理，以推動能源中性的處理廠。\n\n會議將在 Rice University 舉行，該校擁有 Rice WaTER Institute，並鄰近 NASA Johnson Space Center。文章指出，Rice WaTER Institute 已成立 Rice PFAS Abatement and Replacement Center，用於破壞不同基質中的持久性化學物質，也成立 Rice Center for Membrane Excellence，推動膜技術與濃鹽水管理研究。\n\n文章最後強調，技術在水管理發展中扮演關鍵角色。LET 2026 旨在提供接觸前沿科技洞見的平台，激發能創造永續且具韌性未來的轉型解方。",
+      "remove_ocr_patterns": [
+        "More information\\s+Pedro J\\.J\\. Alvarez.*?(?=$)"
+      ]
+    },
+    {
+      "id": "when-water-becomes-weapon",
+      "phase": 4,
+      "title": "When water itself becomes a weapon",
+      "title_en": "When water itself becomes a weapon",
+      "title_zh": "當水本身成為武器",
+      "pages": "22",
+      "magazine_page": "42",
+      "crops": [
+        {
+          "page": 22,
+          "label": "viewpoint-text-p42-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            34,
+            33,
+            96
+          ]
+        },
+        {
+          "page": 22,
+          "label": "viewpoint-text-p42-mid",
+          "kind": "text",
+          "bbox_percent": [
+            33,
+            34,
+            53,
+            96
+          ]
+        },
+        {
+          "page": 22,
+          "label": "viewpoint-text-p43-mid",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            34,
+            72,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 22,
+          "label": "water-weapon-hero",
+          "kind": "image",
+          "bbox_percent": [
+            4,
+            0,
+            98,
+            34
+          ]
+        }
+      ],
+      "tags": [
+        "viewpoint",
+        "ethics",
+        "water-rights",
+        "humanitarian-law"
+      ],
+      "why_selected": "Jorge Rodriguez argues that water professionals have ethical duties when water infrastructure is deliberately denied, polluted or weaponised.",
+      "summary_zh": "本文討論當水被蓄意剝奪、污染或作為傷害工具時，水專業人員是否仍能自稱中立。作者指出，水維繫生命與尊嚴；若供水、處理廠、管線或基礎設施被用來傷害平民，這不只是技術問題，也是道德與法律問題。文章連結國際人道法、人權法與專業倫理，主張水領域應建立「Water Stewardship」倫理，將保護水權與避免技術中立淪為共犯納入專業身份。",
+      "full_text_zh": "本文從水的倫理意義出發，指出水維繫生命、承載尊嚴，也可能成為健康與絕望之間的界線。工程師、科學家與水務專業人員常把自己描述為技術專業者，與政治或人道衝突保持距離。但當水被蓄意剝奪、污染或用來造成傷害時，專業中立是否仍然成立，便成為必須面對的問題。\n\n文章指出，近年世界多次見到水被武器化：處理廠被轟炸、管線被切斷、物資運送路線被阻擋。這些行為不只是破壞基礎設施，而是拆解維繫平民生活的系統。若清潔水的剝奪成為系統性行為，或透過人口隔離讓一群人享有穩定基礎設施、另一群人長期受限，便跨越了道德與法律門檻。\n\n作者引用國際法中的種族滅絕、公約、種族隔離罪與國際刑事法院羅馬規約等原則，指出把水流中的不平等與剝奪工程化，不只是技術失敗，而是道德失敗。水專業人員不能只以數據、設計與證據為名，忽略自身系統可能被用於傷害而非治癒。\n\n其他專業已面對過類似反省。醫學學會了中立可能變成殘酷，因此形成救治傷者的倫理；法律學會了程序若沒有良知會正當化不義；新聞學也形成見證責任。水領域也需要承認，專業若與倫理切割，可能成為共犯。\n\n文章主張，國際法已承認水的保護，包括 Geneva Conventions 與 Additional Protocol I 對平民生存不可或缺物件的保護，以及聯合國承認安全清潔飲水與衛生為人權。但法律本身不足以保障實踐，水專業社群需要把法律原則轉化為活的道德準則。作者提出「Ethic of Water Stewardship」概念，主張剝奪或破壞取水權與水專業使命不相容。這種倫理不會使水專業政治化，而是使其扎根於人性。"
+    },
+    {
+      "id": "kidney-health-sri-lanka",
+      "phase": 4,
+      "title": "Well water and kidney health in Sri Lanka",
+      "title_en": "Well water and kidney health in Sri Lanka",
+      "title_zh": "斯里蘭卡井水與腎臟健康",
+      "pages": "23-24",
+      "magazine_page": "44",
+      "crops": [
+        {
+          "page": 23,
+          "label": "health-text-p44-left-main",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            8,
+            30,
+            96
+          ],
+          "note": "Left article column; excludes keynote photo and image caption."
+        },
+        {
+          "page": 23,
+          "label": "health-text-p44-right-continuation",
+          "kind": "text",
+          "bbox_percent": [
+            34,
+            63,
+            49,
+            94
+          ],
+          "note": "Continuation column under the keynote photo; excludes the photo caption."
+        },
+        {
+          "page": 23,
+          "label": "health-text-p45-left",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            8,
+            71,
+            76
+          ],
+          "note": "Left column only; excludes lower fieldwork image and caption."
+        },
+        {
+          "page": 23,
+          "label": "health-text-p45-right",
+          "kind": "text",
+          "bbox_percent": [
+            76,
+            8,
+            99,
+            96
+          ],
+          "note": "Right column article text."
+        },
+        {
+          "page": 24,
+          "label": "health-text-p46-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            8,
+            31,
+            96
+          ],
+          "note": "Left text column."
+        },
+        {
+          "page": 24,
+          "label": "health-text-p46-right-continuation",
+          "kind": "text",
+          "bbox_percent": [
+            35,
+            36,
+            49,
+            79
+          ],
+          "note": "Right continuation column; excludes collaboration image, caption, and author box."
+        }
+      ],
+      "display_images": [
+        {
+          "page": 23,
+          "label": "professor-min-yang-keynote",
+          "kind": "image",
+          "bbox_percent": [
+            30,
+            20,
+            50,
+            51
+          ]
+        },
+        {
+          "page": 24,
+          "label": "sri-lanka-collaboration",
+          "kind": "image",
+          "bbox_percent": [
+            27,
+            10,
+            49,
+            35
+          ]
+        }
+      ],
+      "tags": [
+        "health",
+        "sri-lanka",
+        "kidney-disease",
+        "groundwater",
+        "water-treatment"
+      ],
+      "why_selected": "This health article explains how Chinese and Sri Lankan collaboration investigated CKDu links to well water and piloted solar-powered electrodialysis treatment.",
+      "summary_zh": "本文介紹斯里蘭卡慢性腎臟病（CKDu）與受污染井水之間的研究與解方。北中部農業區長期受 CKDu 影響，研究團隊懷疑淺層地下水中的氟、硬度相關離子與高鈉可能傷害腎臟。中國與斯里蘭卡團隊透過水質調查、腎臟類器官模型與離子暴露實驗，發現氟與硬度離子組合對腎臟組織具毒性。專案進一步部署太陽能電滲析淨水系統，降低氟與硬度，改善處理水對腎臟細胞的影響，並以社區水站、能力建設與跨國合作擴大影響。",
+      "full_text_zh": "本文說明斯里蘭卡北中部農業區長期面臨原因不明慢性腎臟病（CKDu）危機。CKDu 自 1990 年代被辨識以來，主要影響中年男性農民，患者通常沒有糖尿病或高血壓病史，卻逐漸喪失腎功能。許多重災區家庭仰賴未經處理或過濾的地下水作為主要飲用水，因此井水污染成為重要線索。\n\n中國與斯里蘭卡團隊建立 Joint Research and Demonstration Center，展開跨國研究。水質調查發現，重災區井水中氟離子與鈣、鎂、鈉等硬度相關離子濃度較高。研究團隊進一步使用腎臟類器官模型，模擬人體腎組織對不同水樣的反應。高發生率村莊井水會使腎臟細胞標記表現下降，顯示腎細胞功能受損；低發生率村莊井水或安全實驗室水則未造成相同傷害。\n\n為找出具體致病成分，科學家在實驗室重建井水中的離子組合，特別是氟、鈣與鈉。腎臟類器官暴露於高濃度混合物後，再吸收功能標記顯著下降，說明氟與硬度離子的組合對腎組織具有毒性。這與斯里蘭卡長期懷疑高氟硬水可能導致 CKDu 的流行病學觀察相符。\n\n解方方面，專案採用太陽能電滲析（PV-ED）淨水系統。電滲析利用帶電膜選擇性移除水中離子，搭配太陽能板後可離網運作，適合缺乏集中式水處理設施的農村。試點系統安裝於 16 戶 CKDu 患者家庭，能移除約 60% 氟離子並降低水硬度。經處理的井水再以腎臟類器官測試後，細胞功能標記出現恢復，顯示處理水可減輕腎臟毒性。\n\n專案也強調社區能力與在地擁有權。斯里蘭卡有超過 4000 個社區型供水組織，但多數缺乏處理技術、資金或專業能力。專案因此提出社區營運的 Ganlu Stations 模式，提供處理技術、操作訓練與維護融資設計。相關合作也延伸到孟加拉地下水砷污染與尼泊爾 Dhulikhel 淨水廠計畫。文章總結，CKDu 專案展示了水與健康問題需要跨學科、跨國界合作；結合現場科學、工程解方與社區參與，能為類似危機提供可複製的模式。",
+      "remove_ocr_patterns": [
+        "Professor Min Yang delivers his keynote presentation.*?Bangkok",
+        "Professor Min Yang's team carrying out fieldwork in rural Sri Lanka",
+        "Professor Min Yang with Dinesh Gunawardena.*?Sri Lanka",
+        "The author:\\s*Professor Min Yang.*?(?=$)",
+        "\\?\\s*The author:\\s*$",
+        "The author:\\s*$"
+      ]
+    },
+    {
+      "id": "solutions-water-infrastructure-products",
+      "phase": 5,
+      "title": "Solutions: water infrastructure products",
+      "title_en": "Solutions: water infrastructure products",
+      "title_zh": "解決方案：水務基礎設施產品",
+      "pages": "24",
+      "magazine_page": "47",
+      "crops": [
+        {
+          "page": 24,
+          "label": "solutions-p47-main-title",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            7,
+            84,
+            17
+          ]
+        },
+        {
+          "page": 24,
+          "label": "solutions-p47-tampa-text",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            34,
+            84,
+            57
+          ]
+        },
+        {
+          "page": 24,
+          "label": "solutions-p47-ceramic-title",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            57,
+            84,
+            71
+          ]
+        },
+        {
+          "page": 24,
+          "label": "solutions-p47-ceramic-right",
+          "kind": "text",
+          "bbox_percent": [
+            69,
+            70,
+            84,
+            96
+          ]
+        },
+        {
+          "page": 24,
+          "label": "solutions-p47-sidebar",
+          "kind": "text",
+          "bbox_percent": [
+            84,
+            6,
+            99,
+            94
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 24,
+          "label": "tampa-treatment-upgrade",
+          "kind": "image",
+          "bbox_percent": [
+            55,
+            17,
+            84,
+            35
+          ]
+        },
+        {
+          "page": 24,
+          "label": "ceramic-ultrafiltration-product",
+          "kind": "image",
+          "bbox_percent": [
+            55,
+            72,
+            69,
+            88
+          ]
+        }
+      ],
+      "tags": [
+        "solutions",
+        "infrastructure",
+        "desalination",
+        "resilience",
+        "treatment"
+      ],
+      "why_selected": "A roundup of practical water infrastructure solutions, including treatment upgrades, corrosion protection, lagoon sludge treatment and blue-green roof guidance.",
+      "summary_zh": "本頁整理多項水務解決方案：美國 Tampa Water Department 正推進水處理廠化學系統升級，以提升水質、降低長期營運成本並強化韌性；Acuriant Technologies 推出高容量陶瓷超濾模組，瞄準原水品質、法規壓力與有限場地所帶來的處理挑戰；側欄則介紹混凝土淡化設施的腐蝕抑制產品、以生物酵素處理潟湖污泥的方案，以及藍綠屋頂系統指南。",
+      "full_text_zh": "Tampa Water Department 正在 David L. Tippin Water Treatment Facility 推動關鍵升級，目標是在提升水質的同時降低長期營運成本。這項約 4,200 萬美元的 Chemical Systems Improvement Project 是該部門現代化水處理基礎設施的一部分，將建置現地次氯酸鈉製造設施，使水廠能自行生產液態漂白水進行消毒。此升級也會導入更具韌性的氨投加系統，以支援成長中的需求並改善操作可靠度。\n\nAcuriant Technologies 發表 CUF|Flow 高容量陶瓷超濾模組，作為 Nanostone 品牌產品組合的新產品。Nanostone 膜不含 PFAS，設計上回應市政與工業處理部門正面臨的原水品質變動、監管壓力與場地受限等挑戰。公司表示，新模組在相同占地內提升通量、容量與效率，降低生命週期成本與環境衝擊，並支援公用事業與產業在超濾和分離技術上的需求。\n\n在淡化基礎設施方面，Cortec 推出遷移型腐蝕抑制劑，用於延緩或降低混凝土淡化設施中的腐蝕速率。產品可透過混凝土孔隙形成保護層，守護鋼筋免於氯化物與濕氣等腐蝕因子影響。另有加拿大公司 Bionetix 推出 BIOBOOSTER SR 生物酵素錠，以細菌和酵素將有機廢棄物分解為較簡單且無害的物質，用於控制潟湖污泥累積。ACO Building Drainage 則出版新版 Blue Roof Guide，說明藍綠屋頂如何儲存並管理屋頂雨水、降低尖峰流量，並支援被動灌溉與生物多樣性。",
+      "remove_ocr_patterns": [
+        "Aerial photo shows.*?Facility",
+        "©\\s*iStock\\.com.*?(?=\\n|$)"
+      ]
+    },
+    {
+      "id": "digital-water-solutions-roundup",
+      "phase": 5,
+      "title": "Solutions - Digital",
+      "title_en": "Solutions - Digital",
+      "title_zh": "數位解決方案",
+      "pages": "25",
+      "magazine_page": "48",
+      "crops": [
+        {
+          "page": 25,
+          "label": "digital-p48-sidebar-text",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            31,
+            18,
+            96
+          ]
+        },
+        {
+          "page": 25,
+          "label": "digital-p48-main-top",
+          "kind": "text",
+          "bbox_percent": [
+            20,
+            7,
+            50,
+            36
+          ]
+        },
+        {
+          "page": 25,
+          "label": "digital-p48-main-middle-left",
+          "kind": "text",
+          "bbox_percent": [
+            20,
+            36,
+            34,
+            72
+          ]
+        },
+        {
+          "page": 25,
+          "label": "digital-p48-main-middle-right",
+          "kind": "text",
+          "bbox_percent": [
+            34,
+            50,
+            50,
+            72
+          ]
+        },
+        {
+          "page": 25,
+          "label": "digital-p48-main-bottom",
+          "kind": "text",
+          "bbox_percent": [
+            20,
+            72,
+            50,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 25,
+          "label": "severn-trent-satellite",
+          "kind": "image",
+          "bbox_percent": [
+            4,
+            13,
+            18,
+            31
+          ]
+        },
+        {
+          "page": 25,
+          "label": "ethiopian-pastoralist-movement",
+          "kind": "image",
+          "bbox_percent": [
+            34,
+            42,
+            50,
+            51
+          ]
+        }
+      ],
+      "tags": [
+        "digital-water",
+        "satellite",
+        "innovation",
+        "monitoring",
+        "sensor"
+      ],
+      "why_selected": "A digital-solutions roundup covering satellite flood monitoring, innovation award winners, climate movement mapping and UVT sensors.",
+      "summary_zh": "本頁聚焦水務數位化：Severn Trent 以衛星雷達技術監測極端天氣和廢水系統風險；Aquapreneur Innovation Initiative 表揚多家早期水科技公司；Spire Global 與 GIST Research 將建立衣索比亞牧民移動追蹤工具，協助降低氣候壓力與衝突風險；In-Situ 則推出 TurbiTech UVT 感測器，用於優化 UV 消毒與水質監測。",
+      "full_text_zh": "Severn Trent 正使用衛星技術追蹤極端天氣，並協助維持廢水系統順暢運作。透過先進合成孔徑雷達衛星，即使在雲層覆蓋下，公用事業也能觀察地面狀況，掌握暴雨與洪水風險，並在問題到達用戶端前提前介入。公司認為，結合衛星資料、既有感測器與分析工具，可提升排水與廢水網路在未來面對洪水與風暴中斷時的透明度與韌性。\n\nAquapreneur Innovation Initiative 表揚 10 家 Tacking Water Pollution Challenge 得獎者，這是 HCL Group、UpLink 與世界經濟論壇合作推動的早期創新倡議。得獎者包含 EarthFokus、Hohonu、iFLUX、SWAN Systems 與 Xatoms 等，涵蓋即時水資源管理、洪水和水位監測、地下水與污染物流動監測、農業灌溉最佳化，以及以 AI 和量子化學設計光觸媒進行水淨化等方向。\n\nSpire Global 將與 GIST Research 和 IOM 合作，建立衣索比亞索馬利地區的氣候驅動牧民移動研究與追蹤工具。此工具會整合土壤水分洞察與早期預警系統，監測環境和生計壓力，協助政府與夥伴更早介入，降低資源競爭與衝突風險。\n\nIn-Situ 推出 TurbiTech UVT 感測器，這是一款自清潔儀器，用於最佳化 UV 消毒控制並監測廢水處理設施中的總懸浮固體。公司表示，感測器可提供即時 UV 透射率量測，協助操作人員降低能源使用與營運成本，並可與資料記錄、顯示與通訊系統整合。",
+      "remove_ocr_patterns": [
+        "©\\s*iStock\\.com.*?(?=\\n|$)",
+        "©\\s*iStock\\.com\\s*/\\s*Riccardo Lennart Niels Mayer"
+      ]
+    },
+    {
+      "id": "research-innovation-sludge-desalination",
+      "phase": 5,
+      "title": "Research & Innovation",
+      "title_en": "Research & Innovation",
+      "title_zh": "研究與創新",
+      "pages": "25",
+      "magazine_page": "49",
+      "crops": [
+        {
+          "page": 25,
+          "label": "research-p49-bacteria-left",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            7,
+            70,
+            60
+          ]
+        },
+        {
+          "page": 25,
+          "label": "research-p49-bacteria-right",
+          "kind": "text",
+          "bbox_percent": [
+            70,
+            39,
+            99,
+            60
+          ]
+        },
+        {
+          "page": 25,
+          "label": "research-p49-desalination-left",
+          "kind": "text",
+          "bbox_percent": [
+            55,
+            60,
+            69,
+            96
+          ]
+        },
+        {
+          "page": 25,
+          "label": "research-p49-desalination-right",
+          "kind": "text",
+          "bbox_percent": [
+            86,
+            60,
+            99,
+            96
+          ]
+        },
+        {
+          "page": 25,
+          "label": "research-p49-desalination-bottom",
+          "kind": "text",
+          "bbox_percent": [
+            69,
+            86,
+            86,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 25,
+          "label": "sludge-to-resource-lab",
+          "kind": "image",
+          "bbox_percent": [
+            70,
+            14,
+            99,
+            39
+          ]
+        },
+        {
+          "page": 25,
+          "label": "coastal-desalination-cycle",
+          "kind": "image",
+          "bbox_percent": [
+            69,
+            72,
+            86,
+            86
+          ]
+        }
+      ],
+      "tags": [
+        "research",
+        "innovation",
+        "resource-recovery",
+        "bacteria",
+        "desalination"
+      ],
+      "why_selected": "This section highlights research on bacteria-assisted sludge resource recovery and a proposed coastal desalination strategy for China.",
+      "summary_zh": "研究與創新頁介紹兩項研究：其一是 Haskoning Innovation & Education Fund 捐助 TU Delft，研究細菌如何分解 PFAS、農藥與微塑膠並回收可再利用資源；其二是關於中國海水淡化潛力的研究，提出 100 公里沿海短程水循環策略，將海水淡化作為沿海地區新的可靠供水來源。",
+      "full_text_zh": "Haskoning Innovation & Education Fund 向荷蘭 TU Delft University Fund 捐贈近 50 萬歐元，用於研究能分解 PFAS、農藥與微塑膠並回收有價資源的細菌。此捐助將支持一名科學家在水力工程、水科技與生物科技交會處進行多年期研究，期望產生可全球應用、並有助於永續社會的新技術。研究計畫 Sludge to Resource 將尋找存在於重污染厭氧環境中的細菌，例如疏浚沉積物，並探索這些微生物是否能分解有害物質或回收金屬、生物聚合物等可再利用原料。研究人員指出，地球上多數微生物尚未被研究，仍有大量未知來源等待被理解並轉化為可用技術。\n\n第二篇研究聚焦中國海水淡化的未來。隨著全球水資源稀缺加劇，海水淡化可成為增加淡水供應的戰略途徑，但大規模應用仍受公眾觀感、技術經濟門檻與發展模式不確定性限制。研究者在 Water & Ecology 發表文章，重新評估中國海水淡化潛力與技術創新，提出 100-Kilometer Coastal Desalination for Short-Cut Water Cycle 策略，主張在沿海 100 公里範圍內透過淡化海水建立永續淡水供應。該構想結合生產成本、基礎設施投資與環境外部性，以全生命週期評估支持決策，目標是降低對內陸水源和跨流域調水的依賴，緩解地下水超抽，並改善沿海城市與大型都會區的供需平衡。",
+      "remove_ocr_patterns": [
+        "From left to right:.*?taken\\.",
+        "doi:\\s*10\\.1016/j\\.wateco\\.2025\\.100010"
+      ]
+    },
+    {
+      "id": "reading-events-roundup",
+      "phase": 5,
+      "title": "Reading & Events",
+      "title_en": "Reading & Events",
+      "title_zh": "閱讀與活動",
+      "pages": "26",
+      "magazine_page": "50",
+      "crops": [
+        {
+          "page": 26,
+          "label": "reading-p50-left",
+          "kind": "text",
+          "bbox_percent": [
+            4,
+            7,
+            20,
+            96
+          ]
+        },
+        {
+          "page": 26,
+          "label": "reading-p50-middle",
+          "kind": "text",
+          "bbox_percent": [
+            20,
+            7,
+            34,
+            96
+          ]
+        },
+        {
+          "page": 26,
+          "label": "events-p50-list",
+          "kind": "text",
+          "bbox_percent": [
+            34,
+            7,
+            49,
+            96
+          ]
+        }
+      ],
+      "display_images": [
+        {
+          "page": 26,
+          "label": "reading-book-covers",
+          "kind": "image",
+          "bbox_percent": [
+            4,
+            13,
+            27,
+            43
+          ]
+        }
+      ],
+      "tags": [
+        "reading",
+        "events",
+        "books",
+        "iwa",
+        "conference"
+      ],
+      "why_selected": "This page collects new technical books and upcoming IWA-related events through November 2026.",
+      "summary_zh": "閱讀與活動頁整理新書與活動資訊。書籍涵蓋廢水吸附建模與模擬、微污染物處理、以及污泥減量技術；活動清單則列出 2026 年 5 月至 11 月多場 IWA 與水務相關會議，包括營養鹽去除與回收、污水管渠過程、微污染物與生態危害、LET 2026、消毒與副產物、天然有機物、濕地系統，以及 IWA Digital Water Summit。",
+      "full_text_zh": "本頁介紹三本技術出版品。第一本是 Computational Techniques for Modelling and Simulating Adsorption Processes for (Waste) Water Treatment，主題是以計算方法建模與模擬水與廢水處理中的吸附過程，內容包含水污染與處理概論、吸附原理與模型、建模與最佳化策略、人工智慧與機器學習、以及系統層級最佳化。第二本 Treatment of Micropollutants in Water and Wastewater 聚焦河川、湖泊、土壤與地下水中微污染物濃度上升的議題，介紹感測、奈米科技、混合處理技術，以及化學、生物與物化方法。第三本 Sludge Reduction Technologies in Wastewater Treatment Plants 回顧廢水處理廠污泥減量技術，整理程序配置、潛在效能、優缺點與能耗，供管理者、技術人員與研究生參考。\n\n活動欄列出 2026 年多項會議：5 月包括 IWA Nutrient Removal and Recovery Conference 2026、International Conference on Sewer Processes and Networks，以及 Micropol and Ecohazard Conference；6 月包括 Houston 的 20th IWA Leading Edge Conference on Water and Wastewater Technologies；7 月為 Shanghai 的消毒與消毒副產物國際會議；8 月為 Brno 的 IWA Specialist Conference on NOM；9 月為 Chania 的濕地系統與污染控制國際會議；10 月為 Glasgow 的 IWA World Water Congress & Exhibition；11 月則是 Istanbul 的 IWA Digital Water Summit。頁面並提醒活動日期可能變更，最新資訊應以 IWA 網站為準。",
+      "remove_ocr_patterns": [
+        "Available as an Open-Access ebook\\s+.*?See:\\s*www\\.iwaponline\\.com",
+        "Available as an Open-Access ebook\\s+e[lI1]?SBN:.*?(?=May 2026|$)",
+        "Available as an Open-Access ebook\\s*[eI1l]SBN:.*?(?=May 2026)",
+        "Available as an Open-Access ebook\\s*[eI1l]SBN:.*?(?=\\n[A-Z]|$)",
+        "ISBN:\\s*\\d+.*?(?=\\n|$)",
+        "See:\\s*www\\.iwaponline\\.com",
+        "IWA members are eligible.*?for more information\\.",
+        "More information\\s+Dates subject to change.*?iwa-network\\.org/all-events"
+      ]
+    }
+  ],
+  "toc_entries": [
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "The President",
+      "title_zh": "會長專欄",
+      "page": "5",
+      "article_id": "future-focused-feeling"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "News",
+      "title_zh": "新聞",
+      "page": "6",
+      "article_id": "news-roundup"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "Editorial",
+      "title_zh": "編輯室",
+      "page": "10",
+      "article_id": "waters-role-sustaining-planet"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "IWA News",
+      "title_zh": "IWA 新聞",
+      "page": "12",
+      "article_id": "iwa-news-roundup"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Resources",
+      "title_zh": "資源管理",
+      "page": "13",
+      "article_id": "circular-horticultural-water-management"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "IWA",
+      "title_zh": "IWA 青年領袖",
+      "page": "18",
+      "article_id": "young-leaders-water-landscape"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Sanitation",
+      "title_zh": "衛生",
+      "page": "22",
+      "article_id": "beyond-sewers-non-sewered-sanitation"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Europe",
+      "title_zh": "歐洲",
+      "page": "27",
+      "article_id": "western-balkans-rethink-water"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Governing Member",
+      "title_zh": "治理會員",
+      "page": "31",
+      "article_id": "nepal-water-resources-management"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Development",
+      "title_zh": "發展",
+      "page": "37",
+      "article_id": "bangkok-water-development-progress"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Event",
+      "title_zh": "活動",
+      "page": "41",
+      "article_id": "let-2026-leading-edge-conference"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Viewpoint",
+      "title_zh": "觀點",
+      "page": "42",
+      "article_id": "when-water-becomes-weapon"
+    },
+    {
+      "section_en": "Features",
+      "section_zh": "專題",
+      "title_en": "Health",
+      "title_zh": "健康",
+      "page": "44",
+      "article_id": "kidney-health-sri-lanka"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "Solutions",
+      "title_zh": "解決方案",
+      "page": "47",
+      "article_id": "solutions-water-infrastructure-products"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "Solutions - Digital",
+      "title_zh": "數位解決方案",
+      "page": "48",
+      "article_id": "digital-water-solutions-roundup"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "Research & Innovation",
+      "title_zh": "研究與創新",
+      "page": "49",
+      "article_id": "research-innovation-sludge-desalination"
+    },
+    {
+      "section_en": "Regulars",
+      "section_zh": "固定專欄",
+      "title_en": "Reading & Events",
+      "title_zh": "閱讀與活動",
+      "page": "50",
+      "article_id": "reading-events-roundup"
+    }
+  ]
+}

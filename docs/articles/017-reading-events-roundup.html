@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>閱讀與活動 | Reading &amp; Events</title>
+  <style>
+:root {
+  --paper: #fbfaf7;
+  --ink: #18212f;
+  --muted: #647084;
+  --line: #d7dddf;
+  --accent: #0b6f78;
+  --accent-2: #8f3f2b;
+  --panel: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", "Microsoft JhengHei", Arial, sans-serif;
+  line-height: 1.7;
+}
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.wrap {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+}
+.masthead {
+  padding: 26px 0 18px;
+}
+.kicker {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+h1, h2, h3 { line-height: 1.25; letter-spacing: 0; }
+h1 { font-size: 32px; margin: 0 0 8px; }
+h2 { font-size: 23px; margin: 0 0 10px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+.subtitle { color: var(--muted); margin: 0; }
+main { padding: 24px 0 54px; }
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: 24px;
+  align-items: start;
+}
+.cover img, figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cover, .toc-card, .article-section, figure {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.cover { overflow: hidden; }
+.toc-card, .article-section { padding: 18px; }
+.toc-section + .toc-section { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 16px; }
+.toc-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.toc-item a {
+  color: var(--ink);
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #edf0f1;
+}
+.title-en { font-weight: 750; }
+.title-zh { color: var(--accent); font-weight: 700; margin-top: 2px; }
+.page-num { color: var(--muted); white-space: nowrap; }
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.media-stack, .inline-figures { display: grid; gap: 14px; }
+.inline-figures {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+figure { margin: 0; overflow: hidden; }
+figcaption { padding: 8px 10px; color: var(--muted); font-size: 13px; }
+.article-section + .article-section { margin-top: 16px; }
+.body-text { white-space: pre-wrap; }
+.summary { font-size: 16px; }
+.meta-row { color: var(--muted); font-size: 14px; margin-top: 8px; }
+.nav { margin-bottom: 14px; }
+.nav a { color: var(--accent); font-weight: 700; text-decoration: none; }
+@media (max-width: 860px) {
+  .grid, .article-layout { grid-template-columns: 1fr; }
+  h1 { font-size: 27px; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap masthead">
+      <p class="kicker">The Source · April 2026 · p.50</p>
+      <h1>閱讀與活動<br><span class="title-en">Reading &amp; Events</span></h1>
+      <p class="subtitle">This page collects new technical books and upcoming IWA-related events through November 2026.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="nav"><a href="../index.html">← 返回目錄 / Back to contents</a></div>
+    <div class="article-layout">
+      <aside class="media-stack">
+        <figure>
+  <img src="../article-assets/017-reading-events-roundup/crops/page-026-reading-book-covers.jpg" alt="Reading &amp; Events image">
+  <figcaption>reading-book-covers</figcaption>
+</figure>
+      </aside>
+      <section>
+        <div class="article-section">
+          <h2>中文完整摘要說明</h2>
+          <p class="summary">閱讀與活動頁整理新書與活動資訊。書籍涵蓋廢水吸附建模與模擬、微污染物處理、以及污泥減量技術；活動清單則列出 2026 年 5 月至 11 月多場 IWA 與水務相關會議，包括營養鹽去除與回收、污水管渠過程、微污染物與生態危害、LET 2026、消毒與副產物、天然有機物、濕地系統，以及 IWA Digital Water Summit。</p>
+        </div>
+        <div class="article-section">
+          <h2>中文全文</h2>
+          <div class="body-text">本頁介紹三本技術出版品。第一本是 Computational Techniques for Modelling and Simulating Adsorption Processes for (Waste) Water Treatment，主題是以計算方法建模與模擬水與廢水處理中的吸附過程，內容包含水污染與處理概論、吸附原理與模型、建模與最佳化策略、人工智慧與機器學習、以及系統層級最佳化。第二本 Treatment of Micropollutants in Water and Wastewater 聚焦河川、湖泊、土壤與地下水中微污染物濃度上升的議題，介紹感測、奈米科技、混合處理技術，以及化學、生物與物化方法。第三本 Sludge Reduction Technologies in Wastewater Treatment Plants 回顧廢水處理廠污泥減量技術，整理程序配置、潛在效能、優缺點與能耗，供管理者、技術人員與研究生參考。
+
+活動欄列出 2026 年多項會議：5 月包括 IWA Nutrient Removal and Recovery Conference 2026、International Conference on Sewer Processes and Networks，以及 Micropol and Ecohazard Conference；6 月包括 Houston 的 20th IWA Leading Edge Conference on Water and Wastewater Technologies；7 月為 Shanghai 的消毒與消毒副產物國際會議；8 月為 Brno 的 IWA Specialist Conference on NOM；9 月為 Chania 的濕地系統與污染控制國際會議；10 月為 Glasgow 的 IWA World Water Congress &amp; Exhibition；11 月則是 Istanbul 的 IWA Digital Water Summit。頁面並提醒活動日期可能變更，最新資訊應以 IWA 網站為準。</div>
+        </div>
+        
+        <div class="article-section">
+          <h2>Original Full Text</h2>
+          <div class="body-text">Se ee eee ne a
+
+Modelling
+
+Computational Techniques
+
+for Modelling and Simulating Adsorption Processes for (Waste)
+Water Treatment
+
+rae &lt; By Anshul Yadav and pot | Pawan Labhasetwar
+
+As global water resources
+
+| face growing threats from 2) pollution and overuse,
+
+2 sustainable treatment solutions are urgently needed. Among these, adsorption stands out as an effective and versatile method for removing a broad spectrum of contaminants from water and wastewater. However, optimising adsorption for large-scale applications is a complex challenge that demands both a solid understanding of adsorption science and the use of advanced computational tools.
+Computational Techniques for Modelling and Simulating Adsorption Processes for (Waste)
+Water Treatment addresses this challenge by providing a comprehensive guide integrating core adsorption principles with cutting-edge computational approaches for enhancing adsorption efficiency and system design.
+
+Structured to lead readers from fundamental concepts to advanced applications, the book includes:
+
+@ an overview of water pollution and treatment @ a detailed exploration of adsorption principles and models
+
+@ an introduction to general computational strategies for modelling and optimisation, leading on to density functional theory, molecular dynamics, Monte Carlo simulations, and QSAR techniques
+
+@ Aland machine learning in
+
+adsorption modelling ® computational fluid dynamics and system-
+
+level optimisation. Together, these topics provide researchers, engineers, and practitioners with the tools needed to model, simulate and optimise adsorption processes for more efficient and sustainable water treatment.
+
+Environment
+
+Treatment of Micropollutants in
+Water and Wastewater
+
+By Jurate Virkutyte, Rajender S Varma and
+Veeriah Jegatheesan
+
+There is growing concern over the increasing
+
+concentration of micropollutants == inrivers, lakes, soil and XS (7) groundwater. This book (newly \4 released as a paperback) provides a comprehensive il overview of methods to remove continuously emerging contaminants micropollutants - from the aqueous phase. Recent trends, including sensor technology, nanotechnology and hybrid treatment technologies, are described in detail, along with information on the various chemical, biological and physicochemical methods that have evolved over the past few decades.
+
+This book will enable readers to make well-informed choices on the most appropriate techniques for providing cost- and technologically effective sustainable solutions for reaching the goal of micropollutant-free water and wastewater.
+
+Treatment
+
+Sludge Reduction Technologies in
+Wastewater Treatment Plants By Paola Foladori, Gianni Andreottola and Biullatio Ziglio
+
+=| Newly released as a paperback, | Sludge Reduction Technologies =“ in Wastewater Treatment Plants
+
+reduction techniques integrated == in wastewater treatment plants with toate on the most promising and widespread techniques. The book&#x27;s aim is to update the international community on the current status of knowledge and techniques.
+
+It provides a comprehensive understanding of the principles of sludge reduction techniques, process configurations, potential performance, advantages and drawbacks, and economics and energy consumption.
+
+This book is regarded as essential reading for managers and technical staff of wastewater treatment plants, as well as graduate students and post-graduate specialists.
+
+May 2026
+
+IWA Nutrient Removal and Recovery Conference 2026
+
+Delft, Netherlands
+
+16-20 May 2026
+
+Tith International Conference on Sewer
+Processes and Networks
+
+Trondheim, Norway
+
+19-21 May 2026
+
+14th Micropol and Ecohazard Conference 2026
+
+Toronto, Canada
+
+30 May 2026 - 3 June 2026
+
+June 2026
+
+20th IWA Leading Edge Conference on
+Water and Wastewater Technologies Houston, USA
+
+1-5 June 2026
+
+July 2026
+
+5th IWA International Conference on Disinfection and Disinfection By-Products
+
+Shanghai, China
+
+7-11 July 2026
+
+August 2026
+
+9th IWA Specialist Conference on NOM Brno, Czechia
+
+23-28 August 2026
+
+September 2026
+
+19th International Conference on Wetland Systems for Water
+Pollution Control
+
+Chania, Greece
+
+13-17 September 2026
+
+October 2026
+
+IWA World Water Congress ~ &amp; Exhibition 2026
+
+Glasgow, UK
+
+4-8 October 2026
+
+November 2026
+
+IWA Digital Water Summit Istanbul, Tiirkiye
+
+24-26 November 2026</div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
