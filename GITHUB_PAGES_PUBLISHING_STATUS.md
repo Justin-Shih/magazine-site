@@ -111,6 +111,19 @@ Push completed:
 main -> origin/main
 ```
 
+GitHub Pages is configured:
+
+```text
+Deploy from a branch -> main -> /docs
+```
+
+Verified public URLs:
+
+```text
+https://justin-shih.github.io/magazine-site/
+https://justin-shih.github.io/magazine-site/source-april-2026-magazine-site/
+```
+
 ## Magazine Site Structure
 
 The GitHub repository `magazine-site` is the stable category-level home for magazine website publishing.
@@ -149,10 +162,8 @@ python scripts/update_magazine_index.py
 
 ## Next Commands
 
-GitHub Pages still needs to be enabled in repository settings:
+For the next magazine issue, publish into a new issue folder:
 
-```text
-Repository Settings -> Pages -> Deploy from a branch -> main -> /docs
+```powershell
+python scripts/publish_site.py --site-slug source-may-2026-magazine-site
 ```
-
-If Pages is still configured to publish from the repository root, the root `index.html` redirects to `docs/` as a temporary compatibility bridge. The preferred clean setup remains `main` branch with `/docs` as the Pages folder.

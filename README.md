@@ -24,14 +24,6 @@ Current public URLs:
 
 ```text
 https://justin-shih.github.io/magazine-site/
-https://justin-shih.github.io/magazine-site/docs/
-https://justin-shih.github.io/magazine-site/docs/source-april-2026-magazine-site/
-```
-
-Preferred clean URLs after GitHub Pages is set to publish from `/docs`:
-
-```text
-https://justin-shih.github.io/magazine-site/
 https://justin-shih.github.io/magazine-site/source-april-2026-magazine-site/
 ```
 
@@ -41,7 +33,7 @@ Local generated site before publishing:
 output/site/index.html
 ```
 
-The `docs/.nojekyll` file is included so GitHub Pages serves the static files directly without Jekyll processing when Pages is configured for `/docs`.
+The `docs/.nojekyll` file is included so GitHub Pages serves the static files directly without Jekyll processing.
 
 ## Main Commands
 
@@ -86,13 +78,14 @@ In the GitHub repository:
 5. Select folder `/docs`.
 6. Save.
 
+Current status: GitHub Pages is configured to publish from `main` branch, `/docs`.
+
 Upload or commit these important paths:
 
 ```text
 README.md
 config/
 scripts/
-index.html
 docs/
 docs/.nojekyll
 ```
