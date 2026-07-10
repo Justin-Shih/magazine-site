@@ -58,6 +58,25 @@ def rewrite_paths(dest: Path) -> None:
         html_path.write_text(text, encoding="utf-8")
 
 
+def update_magazine_index(dest_root: Path) -> None:
+    index_script = ROOT / "scripts" / "update_magazine_index.py"
+    if not index_script.exists():
+        return
+
+    result = subprocess.run(
+        [sys.executable, str(index_script), "--docs", str(dest_root)],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if result.stdout.strip():
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(result.stderr.strip())
+        raise RuntimeError("Magazine root index update failed.")
+
+
 def git_available() -> bool:
     return shutil.which("git") is not None
 
@@ -83,7 +102,7 @@ def maybe_git_publish(commit_message: str, push: bool) -> None:
         print("Skipped git commit/push because this folder is not a ready git repo.")
         return
 
-    run_git(["add", "docs", "scripts/publish_site.py", "README.md"])
+    run_git(["add", "docs", "scripts/publish_site.py", "scripts/update_magazine_index.py", "README.md"])
     status_after_add = run_git(["status", "--short"])
     if not status_after_add.stdout.strip():
         print("No git changes to commit.")
@@ -124,6 +143,7 @@ def main() -> int:
     rewrite_paths(dest.resolve())
     dest_root.mkdir(parents=True, exist_ok=True)
     (dest_root / ".nojekyll").write_text("", encoding="utf-8")
+    update_magazine_index(dest_root.resolve())
     print(f"Copied site: {source.resolve()} -> {dest.resolve()}")
     print(f"GitHub Pages folder: {dest_root.resolve()}")
 

@@ -139,6 +139,14 @@ docs/index.html
 
 Use `scripts/publish_site.py --site-slug <issue-slug>` for future issue publishing.
 
+Root index maintenance is automated:
+
+```powershell
+python scripts/update_magazine_index.py
+```
+
+`scripts/publish_site.py --site-slug <issue-slug>` also refreshes `docs/index.html` after publishing the issue folder.
+
 ## Next Commands
 
 GitHub Pages still needs to be enabled in repository settings:
