@@ -97,34 +97,23 @@ largest file about 5.09 MB
 
 No single file was found near GitHub's 100 MB file limit.
 
-## Pending Decisions
+## Push Status
 
-Remaining final task:
+Remote repository:
 
 ```text
-Create or provide the GitHub repository URL, then add remote and push.
+https://github.com/Justin-Shih/magazine-site.git
 ```
 
-This is intentionally left for the final publishing step.
+Push completed:
 
-Information still needed:
-
-- GitHub repository URL, for example:
-  ```text
-  https://github.com/<owner>/magazine-site.git
-  ```
+```text
+main -> origin/main
+```
 
 ## Next Commands
 
-When the final publishing task is resumed:
-
-```powershell
-cd "C:\Justin\Codex\projects\雜誌分析導出網頁與NBLM筆記"
-git remote add origin <GitHub repository URL>
-git push -u origin main
-```
-
-Then configure GitHub Pages:
+GitHub Pages still needs to be enabled in repository settings:
 
 ```text
 Repository Settings -> Pages -> Deploy from a branch -> main -> /docs
