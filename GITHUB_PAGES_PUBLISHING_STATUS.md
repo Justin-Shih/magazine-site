@@ -167,3 +167,9 @@ For the next magazine issue, publish into a new issue folder:
 ```powershell
 python scripts/publish_site.py --site-slug source-may-2026-magazine-site
 ```
+
+Use the step-by-step checklist:
+
+```text
+NEXT_ISSUE_PUBLISHING_TEMPLATE.md
+```

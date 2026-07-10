@@ -55,6 +55,12 @@ Publish the generated website into the current issue folder and refresh the maga
 python scripts/publish_site.py --site-slug source-april-2026-magazine-site
 ```
 
+For the next issue, copy the checklist in:
+
+```text
+NEXT_ISSUE_PUBLISHING_TEMPLATE.md
+```
+
 Refresh the root magazine index only:
 
 ```powershell
@@ -84,6 +90,7 @@ Upload or commit these important paths:
 
 ```text
 README.md
+NEXT_ISSUE_PUBLISHING_TEMPLATE.md
 config/
 scripts/
 docs/
