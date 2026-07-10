@@ -21,7 +21,6 @@ def copy_site(source: Path, dest: Path) -> None:
     if dest.exists():
         shutil.rmtree(dest)
     shutil.copytree(source, dest)
-    (dest / ".nojekyll").write_text("", encoding="utf-8")
 
 
 def linked_article_pages(dest: Path) -> set[str]:
@@ -110,19 +109,23 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Publish generated static site to docs/ for GitHub Pages.")
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     parser.add_argument("--dest", type=Path, default=DEFAULT_DEST)
+    parser.add_argument("--site-slug", help="Optional issue-level folder under docs/, for example source-april-2026-magazine-site.")
     parser.add_argument("--commit", action="store_true", help="Commit docs/ changes when git is available.")
     parser.add_argument("--push", action="store_true", help="Push after committing. Implies --commit.")
     parser.add_argument("--message", default="Publish generated site")
     args = parser.parse_args()
 
     source = args.source if args.source.is_absolute() else (ROOT / args.source)
-    dest = args.dest if args.dest.is_absolute() else (ROOT / args.dest)
+    dest_root = args.dest if args.dest.is_absolute() else (ROOT / args.dest)
+    dest = dest_root / args.site_slug if args.site_slug else dest_root
 
     copy_site(source.resolve(), dest.resolve())
     copy_publish_assets(dest.resolve())
     rewrite_paths(dest.resolve())
+    dest_root.mkdir(parents=True, exist_ok=True)
+    (dest_root / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Copied site: {source.resolve()} -> {dest.resolve()}")
-    print(f"GitHub Pages folder: {dest.resolve()}")
+    print(f"GitHub Pages folder: {dest_root.resolve()}")
 
     if args.commit or args.push:
         maybe_git_publish(args.message, args.push)

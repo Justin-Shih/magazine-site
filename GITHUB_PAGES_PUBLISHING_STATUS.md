@@ -111,6 +111,34 @@ Push completed:
 main -> origin/main
 ```
 
+## Magazine Site Structure
+
+The GitHub repository `magazine-site` is the stable category-level home for magazine website publishing.
+
+Each magazine issue should be published as its own issue-level homepage under `docs/`, using a directory named for the magazine and issue date. This prevents future issues from overwriting the root homepage.
+
+Current issue homepage:
+
+```text
+docs/source-april-2026-magazine-site/index.html
+```
+
+Future magazine issue examples:
+
+```text
+docs/source-may-2026-magazine-site/index.html
+docs/source-june-2026-magazine-site/index.html
+docs/another-magazine-july-2026-site/index.html
+```
+
+The root page is an index:
+
+```text
+docs/index.html
+```
+
+Use `scripts/publish_site.py --site-slug <issue-slug>` for future issue publishing.
+
 ## Next Commands
 
 GitHub Pages still needs to be enabled in repository settings:
