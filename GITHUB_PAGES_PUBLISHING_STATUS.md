@@ -154,3 +154,5 @@ GitHub Pages still needs to be enabled in repository settings:
 ```text
 Repository Settings -> Pages -> Deploy from a branch -> main -> /docs
 ```
+
+If Pages is still configured to publish from the repository root, the root `index.html` redirects to `docs/` as a temporary compatibility bridge. The preferred clean setup remains `main` branch with `/docs` as the Pages folder.
