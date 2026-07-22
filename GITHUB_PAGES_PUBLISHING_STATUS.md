@@ -70,14 +70,19 @@ git log --oneline --decorate -1
 git -c safe.directory='C:/Justin/Codex/projects/雜誌分析導出網頁與NBLM筆記' -C 'C:\Justin\Codex\projects\雜誌分析導出網頁與NBLM筆記' status --short --branch
 ```
 
-- Local Git author is configured for this repository:
+- Local Git author is configured for this repository. Personal email values are intentionally omitted from tracked documentation:
 
 ```text
 user.name=Justin-Shih
-user.email=<redacted-email>
+user.email=<configured locally; not documented>
 ```
 
-- The GitHub connector returned no accessible repositories, so the intended GitHub repository URL still must be provided manually.
+- The repository remote has been verified locally:
+
+```text
+origin=https://github.com/Justin-Shih/magazine-site.git
+main tracks origin/main
+```
 
 Recommended new GitHub repository name:
 
