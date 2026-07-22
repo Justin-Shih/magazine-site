@@ -178,3 +178,13 @@ Use the step-by-step checklist:
 ```text
 NEXT_ISSUE_PUBLISHING_TEMPLATE.md
 ```
+
+## Git Privacy Cleanup — 2026-07-22
+
+- Rewrote all reachable `main` history to remove personal Gmail values from tracked content.
+- Replaced every commit author and committer email with the GitHub ID-based noreply address.
+- Verified the rewritten local and GitHub histories contain zero Gmail values.
+- Verified GitHub Pages rebuilt successfully from the rewritten `main` branch.
+- Confirmed the repository has no forks or pull requests that retain the old history.
+- Old unreachable commit objects may remain temporarily accessible through GitHub object caching. A GitHub Support purge is the remaining step if permanent cache removal is required.
+- Existing clones created before this cleanup must be discarded and cloned again; do not merge or push their old history.
