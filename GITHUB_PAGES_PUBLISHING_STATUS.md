@@ -1,22 +1,21 @@
 # GitHub Pages Publishing Status
 
-Last updated: 2026-07-10
+Last updated: 2026-07-22
 
-## Current Local Publishing Copy
+## Repository Status
 
-This C drive folder is the Git-friendly working copy for publishing the magazine site:
+- Canonical repository: `Justin-Shih/magazine-site`
+- Default branch: `main`
+- Local branch tracks `origin/main`
+- GitHub Pages source: `main` branch, `/docs`
+- Reachable privacy-cleaned baseline: `f0dd8d4`
+- Exact repository path is trusted through the global Git `safe.directory` configuration; no per-command override is required.
 
-```text
-C:\Justin\Codex\projects\雜誌分析導出網頁與NBLM筆記
-```
+The private source workspace and cloud storage location are maintained separately. Do not record workstation paths, cloud-drive paths, private account addresses, NotebookLM IDs, credentials, or tokens in this tracked status file.
 
-It was created from the Google Drive source project:
+## Publishing Scope
 
-```text
-G:\我的雲端硬碟\@@Codex\雜誌分析導出網頁與NBLM筆記
-```
-
-Copied into this working copy:
+The repository contains the Git-friendly publishing package:
 
 ```text
 README.md
@@ -26,114 +25,37 @@ docs/
 .gitignore
 ```
 
-Not copied intentionally:
+Private or generated source material is intentionally excluded:
 
 ```text
-Source April 2026.pdf
-output/
+source magazine PDFs
 input/
+output/
+NotebookLM private routing data
+local configuration and credentials
 ```
 
-## Git Status
+## Size Baseline
 
-Git repository initialized:
+The original `docs/` package contained approximately 134 files and 113 MB in total. Its largest file was approximately 5.09 MB, below GitHub's individual 100 MB file limit.
 
-```powershell
-git init -b main
-```
+Recheck file sizes before publishing each new issue rather than assuming this historical baseline is still current.
 
-Current repository status:
+## GitHub Pages Status
 
-```text
-untracked:
-  .gitignore
-  README.md
-  config/
-  docs/
-  scripts/
-```
-
-Initial commit has been created. To inspect the current commit:
-
-```powershell
-git log --oneline --decorate -1
-```
-
-2026-07-10 check:
-
-- Repository is initialized on branch `main`.
-- Initial commit exists on `main`.
-- No `origin` remote is configured.
-- Running Git from the Codex sandbox requires a one-off safe-directory override because the repository is owned by the Windows user and Codex runs as a sandbox user:
-
-```powershell
-git -c safe.directory='C:/Justin/Codex/projects/雜誌分析導出網頁與NBLM筆記' -C 'C:\Justin\Codex\projects\雜誌分析導出網頁與NBLM筆記' status --short --branch
-```
-
-- Local Git author is configured for this repository. Personal email values are intentionally omitted from tracked documentation:
-
-```text
-user.name=Justin-Shih
-user.email=<configured locally; not documented>
-```
-
-- The repository remote has been verified locally:
-
-```text
-origin=https://github.com/Justin-Shih/magazine-site.git
-main tracks origin/main
-```
-
-Recommended new GitHub repository name:
-
-```text
-magazine-site
-```
-
-## Size Check
-
-The GitHub Pages `docs/` package from the Google Drive source has:
-
-```text
-134 files
-about 113 MB total
-largest file about 5.09 MB
-```
-
-No single file was found near GitHub's 100 MB file limit.
-
-## Push Status
-
-Remote repository:
-
-```text
-https://github.com/Justin-Shih/magazine-site.git
-```
-
-Push completed:
-
-```text
-main -> origin/main
-```
-
-GitHub Pages is configured:
+Pages is configured as:
 
 ```text
 Deploy from a branch -> main -> /docs
 ```
 
-Verified public URLs:
-
-```text
-https://justin-shih.github.io/magazine-site/
-https://justin-shih.github.io/magazine-site/source-april-2026-magazine-site/
-```
+The public root and current issue page were verified successfully after the 2026-07-22 privacy cleanup.
 
 ## Magazine Site Structure
 
 The GitHub repository `magazine-site` is the stable category-level home for magazine website publishing.
 
-Each magazine issue should be published as its own issue-level homepage under `docs/`, using a directory named for the magazine and issue date. This prevents future issues from overwriting the root homepage.
+Each magazine issue must use its own issue-level folder under `docs/` so future issues do not overwrite the root homepage.
 
 Current issue homepage:
 
@@ -141,7 +63,7 @@ Current issue homepage:
 docs/source-april-2026-magazine-site/index.html
 ```
 
-Future magazine issue examples:
+Future issue examples:
 
 ```text
 docs/source-may-2026-magazine-site/index.html
@@ -149,42 +71,27 @@ docs/source-june-2026-magazine-site/index.html
 docs/another-magazine-july-2026-site/index.html
 ```
 
-The root page is an index:
+The root index is:
 
 ```text
 docs/index.html
 ```
 
-Use `scripts/publish_site.py --site-slug <issue-slug>` for future issue publishing.
-
-Root index maintenance is automated:
+Use the existing scripts for future issues:
 
 ```powershell
+python scripts/publish_site.py --site-slug <issue-slug>
 python scripts/update_magazine_index.py
 ```
 
-`scripts/publish_site.py --site-slug <issue-slug>` also refreshes `docs/index.html` after publishing the issue folder.
-
-## Next Commands
-
-For the next magazine issue, publish into a new issue folder:
-
-```powershell
-python scripts/publish_site.py --site-slug source-may-2026-magazine-site
-```
-
-Use the step-by-step checklist:
-
-```text
-NEXT_ISSUE_PUBLISHING_TEMPLATE.md
-```
+Use `NEXT_ISSUE_PUBLISHING_TEMPLATE.md` as the step-by-step checklist.
 
 ## Git Privacy Cleanup — 2026-07-22
 
 - Rewrote all reachable `main` history to remove personal Gmail values from tracked content.
-- Replaced every commit author and committer email with the GitHub ID-based noreply address.
+- Replaced reachable commit author and committer emails with the GitHub ID-based noreply address.
 - Verified the rewritten local and GitHub histories contain zero Gmail values.
 - Verified GitHub Pages rebuilt successfully from the rewritten `main` branch.
-- Confirmed the repository has no forks or pull requests that retain the old history.
-- Old unreachable commit objects may remain temporarily accessible through GitHub object caching. A GitHub Support purge is the remaining step if permanent cache removal is required.
-- Existing clones created before this cleanup must be discarded and cloned again; do not merge or push their old history.
+- Confirmed the repository had no forks or pull requests retaining the old reachable history at cleanup time.
+- Old unreachable commit objects may remain temporarily accessible through GitHub object caching. A GitHub Support purge is optional if permanent cache removal is required.
+- Clones created before the cleanup must be discarded and cloned again; do not merge or push their old history.
