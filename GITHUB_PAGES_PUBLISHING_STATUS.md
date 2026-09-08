@@ -1,6 +1,6 @@
 # GitHub Pages Publishing Status
 
-Last updated: 2026-07-22
+Last updated: 2026-09-08
 
 ## Repository Status
 
@@ -57,11 +57,17 @@ The GitHub repository `magazine-site` is the stable category-level home for maga
 
 Each magazine issue must use its own issue-level folder under `docs/` so future issues do not overwrite the root homepage.
 
-Current issue homepage:
+Published issue homepages:
 
 ```text
+docs/source-december-2025-magazine-site/index.html
 docs/source-april-2026-magazine-site/index.html
+docs/source-july-2026-magazine-site/index.html
 ```
+
+The July 2026 site was published in commit `bdbfdb5` (`Publish Source July 2026 magazine site`). At the time of this update, local `main`, `origin/main`, and `origin/HEAD` point to that commit.
+
+The Source December 2025 site was added on 2026-09-08 using the same established `docs/<issue-slug>/` publishing model.
 
 Future issue examples:
 

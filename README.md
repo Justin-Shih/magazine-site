@@ -4,7 +4,7 @@ This repository is the stable GitHub Pages home for magazine website publishing.
 
 Each magazine issue is published into its own folder under `docs/`, so future issues do not overwrite the root magazine index.
 
-The current published issue is the April 2026 issue of *The Source* magazine.
+The published issues currently include the December 2025, April 2026, and July 2026 issues of *The Source* magazine.
 
 The local pipeline turns magazine PDFs into:
 
@@ -24,7 +24,9 @@ Current public URLs:
 
 ```text
 https://justin-shih.github.io/magazine-site/
+https://justin-shih.github.io/magazine-site/source-december-2025-magazine-site/
 https://justin-shih.github.io/magazine-site/source-april-2026-magazine-site/
+https://justin-shih.github.io/magazine-site/source-july-2026-magazine-site/
 ```
 
 Local generated site before publishing:
@@ -73,28 +75,31 @@ Prepare NotebookLM-ready Markdown sources:
 python scripts/prepare_notebooklm_package.py
 ```
 
-## GitHub Pages Setup
+## Existing GitHub Website
 
-In the GitHub repository:
+This project already uses the GitHub repository
+[`Justin-Shih/magazine-site`](https://github.com/Justin-Shih/magazine-site) as the stable public home for magazine websites. GitHub Pages has already been configured to deploy the `docs/` folder from the `main` branch; this is an existing project setting, not an extra setup step for each issue.
 
-1. Go to `Settings`.
-2. Open `Pages`.
-3. Set source to `Deploy from a branch`.
-4. Select branch `main`.
-5. Select folder `/docs`.
-6. Save.
-
-Current status: GitHub Pages is configured to publish from `main` branch, `/docs`.
-
-Upload or commit these important paths:
+The completed publishing arrangement is:
 
 ```text
-README.md
+local output/site/
+  -> scripts/publish_site.py
+  -> docs/<issue-slug>/
+  -> scripts/update_magazine_index.py refreshes docs/index.html
+  -> commit and push to origin/main
+  -> GitHub Pages serves the committed docs/ files
+```
+
+`docs/index.html` is the public cross-issue entrance. Each issue remains self-contained under `docs/<issue-slug>/`, and `docs/.nojekyll` makes GitHub Pages serve the generated static files directly. GitHub does not run the PDF, OCR, translation, summarization, or NotebookLM preparation stages; those are completed locally before the static website is committed.
+
+The same arrangement is used for the completed December 2025, April 2026, and July 2026 publications. The July publication is recorded by commit `bdbfdb5` (`Publish Source July 2026 magazine site`) on `main`.
+
+Operational details and the established next-issue checklist remain in:
+
+```text
+GITHUB_PAGES_PUBLISHING_STATUS.md
 NEXT_ISSUE_PUBLISHING_TEMPLATE.md
-config/
-scripts/
-docs/
-docs/.nojekyll
 ```
 
 ## Output Structure
@@ -125,10 +130,18 @@ output/notebooklm/
 
 docs/
   index.html
+  source-december-2025-magazine-site/
+    index.html
+    articles/
+    site-assets/
   source-april-2026-magazine-site/
     index.html
     articles/
     article-assets/
+    site-assets/
+  source-july-2026-magazine-site/
+    index.html
+    articles/
     site-assets/
   .nojekyll
 ```

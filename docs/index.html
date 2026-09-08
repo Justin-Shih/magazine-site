@@ -45,6 +45,12 @@
     }
     .subtitle { margin: 0; color: var(--muted); }
     main { padding: 28px 0 56px; }
+    .year-group + .year-group { margin-top: 28px; }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
     .issue-list {
       display: grid;
       gap: 14px;
@@ -78,16 +84,30 @@
   </header>
   <main>
     <div class="wrap">
-      <ul class="issue-list">
-        <li class="issue">
-          <a href="source-april-2026-magazine-site/">Source April 2026 雙語雜誌筆記</a>
-          <p>GitHub Pages path: <code>/source-april-2026-magazine-site/</code></p>
-        </li>
-        <li class="issue">
+      <div class="issue-years">
+        <section class="year-group">
+          <h2>2026</h2>
+          <ul class="issue-list">
+          <li class="issue">
           <a href="source-july-2026-magazine-site/">Source July 2026 雙語雜誌筆記</a>
           <p>GitHub Pages path: <code>/source-july-2026-magazine-site/</code></p>
         </li>
-      </ul>
+          <li class="issue">
+          <a href="source-april-2026-magazine-site/">Source April 2026 雙語雜誌筆記</a>
+          <p>GitHub Pages path: <code>/source-april-2026-magazine-site/</code></p>
+        </li>
+          </ul>
+        </section>
+        <section class="year-group">
+          <h2>2025</h2>
+          <ul class="issue-list">
+          <li class="issue">
+          <a href="source-december-2025-magazine-site/">Source December 2025 雙語雜誌筆記</a>
+          <p>GitHub Pages path: <code>/source-december-2025-magazine-site/</code></p>
+        </li>
+          </ul>
+        </section>
+      </div>
     </div>
   </main>
 </body>

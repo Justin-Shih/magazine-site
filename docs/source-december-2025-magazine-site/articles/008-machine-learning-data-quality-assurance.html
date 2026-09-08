@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>機器學習如何改善資料品質保證 | How can machine learning improve data quality assurance</title>
+  <style>
+:root { --paper:#f8f6f1; --ink:#17212b; --muted:#657083; --line:#d8dedf; --accent:#0b6f78; --panel:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:"Segoe UI","Microsoft JhengHei",Arial,sans-serif; line-height:1.72; }
+header { background:var(--panel); border-bottom:1px solid var(--line); }
+.wrap { width:min(1120px, calc(100% - 36px)); margin:auto; }
+.masthead { padding:24px 0 18px; }
+.kicker { color:var(--accent); font-weight:700; font-size:13px; margin:0 0 6px; }
+h1 { font-size:32px; line-height:1.25; margin:0 0 8px; letter-spacing:0; }
+h2 { font-size:22px; line-height:1.3; margin:0 0 10px; letter-spacing:0; }
+.subtitle,.meta { color:var(--muted); }
+.grid { display:grid; grid-template-columns:340px 1fr; gap:24px; padding:24px 0 52px; }
+.cover img { width:100%; display:block; }
+.cover,.panel,.article { background:var(--panel); border:1px solid var(--line); border-radius:8px; }
+.panel,.article { padding:18px; }
+.toc { list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+.toc a { display:grid; grid-template-columns:1fr auto; gap:12px; text-decoration:none; color:var(--ink); border-bottom:1px solid #edf0f1; padding:10px 0; }
+.zh { color:var(--accent); font-weight:750; }
+.en { font-weight:750; }
+.article { margin:18px 0; }
+.body { white-space:pre-wrap; }
+.nav { padding-top:18px; }
+.nav a { color:var(--accent); font-weight:700; text-decoration:none; }
+@media(max-width:820px){ .grid{grid-template-columns:1fr} h1{font-size:27px} }
+</style>
+</head>
+<body>
+  <header><div class="wrap masthead">
+    <p class="kicker">Source · December 2025 · p.20-22</p>
+    <h1>機器學習如何改善資料品質保證<br><span class="en">How can machine learning improve data quality assurance</span></h1>
+    <p class="subtitle">數位 / Digital</p>
+  </div></header>
+  <main class="wrap">
+    <div class="nav"><a href="../index.html">← 返回目錄 / Back to contents</a></div>
+    <section class="article"><h2>中文完整摘要說明</h2><p>Karen Schulz 說明水位、pH、雨量等感測資料在缺值、漂移、雜訊與設備異常下，必須先經品質保證才能支援 AI 決策。機器學習可提高品質控制與補值自動化，但需要 ground truth、模型比較、使用情境定義與人類介入。</p></section>
+    <section class="article"><h2>中文全文翻譯</h2><div class="body">水務感測器數量增加，使資料品質控制與缺值補正的工作量快速上升。錯誤可能來自植生、破壞、設備缺陷、漂移、雜訊或缺值；而資料品質不是抽象的單一分數，而是對特定用途是否適用。洪水預警等下游系統若直接依賴不可靠資料，錯誤會沿著資料到資訊、知識與決策的鏈條擴大。
+
+規則式方法適合處理物理範圍等清楚條件，統計方法可識別極端值，但較複雜的方法常需大量校準與解釋。機器學習的價值在於表達複雜情境並利用長時間序列中的隱含資訊，不代表能達到百分之百自動化。作者提醒，簡單演算法有時與複雜模型表現相近，實務選型應納入人力、時間、可解釋性與維護成本。
+
+導入前至少需要可評估模型的 ground truth、對新資料點的準確度檢查，以及在同一評估資料上比較候選模型。不同流域與研究資料不易直接比較，目前仍缺乏普遍適用的模型選擇準則。機器學習應被視為資料品質流程的一部分，與人工查核、物理模型、例外處理及責任分工共同設計。</div></section>
+    <section class="article"><h2>Original Full Text</h2><div class="body">Digital
+
+How can machine learning improve data quality assurance?
+
+Karen Schulz, one of the authors of a recent paper on the use of machine learning to improve sensor quality control, published in IWA Publishing’s Journal of Hydroinformatics, discusses the paper’s findings.
+
+alid data is essential for ensuring sound
+
+applications in the water sector, especially as
+
+the sources and amounts of data are greatly
+
+increasing, particularly those associated with water-related sensors. As a result, there is the need for more automated data quality assurance to reduce workloads, especially in the large subfields of quality control and data imputation. In many business areas, machine learning techniques have proven their capabilities for semi-automating tasks that were formerly entirely reliant on human labour. Following this trend, efforts in data quality assurance should be intensified to further develop strong foundations for data management to guide downstream applications.
+
+Why is data quality assurance of importance? Reliable data is a contributor to knowledge generation and expansion as well as decision-making. It forms the basis from which information can be extracted, providing knowledge on which decision-making is based (see Figure 1). Increasing digitalisation affects all parts of this process. As we see more sensor devices being installed, such as water-level sensors, pH sensors, and rain gauges, this data can be used to inform all parts of the subsequent process. For example, Al-based flash flood forecasting systems can rely on rain gauge, radar and further input data to extract
+
+knowledge
+
+information
+
+data quality data
+
+Fig. 1 Data quality as part of the data-driven process from data to (decision-making) actions
+
+20| The Source | December 2025
+
+knowledge and actionable insights for emergency personnel. Currently, automated and data-driven knowledge generation and decision- making processes are being increasingly developed. With this drive, it is therefore important that databases are reliable, valid and safe, as subsequent applications are fed by this information and depend on it to an increasingly high degree.
+
+One approach is to incorporate tools for the robust handling of unclean data into each specific downstream application. For many reasons data cannot be trusted immediately after measurement but needs to be critically reviewed. Inaccuracies or faults in sensor data can occur because of various circumstances, such as vegetation growth, vandalism and imperfect measurement devices, and they can include error types such as missing values, drifts and noise. It should also be noted that the quality of data is not an independent concept, as it is usually defined in terms of ‘fitness for use’ in a specific application or scenario. As a consequence, it is conceivable that several qualified time series may exist side by side, being used in different contexts and for different requirements.
+
+How things work when machine learning does not come into play Early forms of data quality assurance required individuals to critically review data points - when conducting a small experiment on the water table of a river, for example. In the meantime, real-
+
+world properties are gathered automatically through sensors and other devices. Nowadays, both rule- based and statistics-based methods can be used to identify, delete, and impute problematic data points. For certain simple kinds of errors, such as values outside physical limits, rule-based methods are the right choice, being as complex as necessary and as simple as possible. Statistical methods are used, for example, to check extreme values or eliminate them if necessary. Advanced statistical methods, however, require a lot of manual calibration, result interpretation, and may be specifically tailored. Methods are straightforward and transparent but usually have to be laboriously adapted for each error case when dealing with complex data quality issues.
+
+What can machine learning do for the data quality assurance field? The use of machine learning aims to improve the degree of automation in data quality assurance. However, the authors of the paper do not assume that the degree of automation will reach 100%. Rather, the amount of human interaction and intervention required will depend on various considerations, such as the time frame for testing, quality
+
+Digital
+
+requirements, and individual factors. Machine learning is thought to be able to add a higher degree of automation because of its prospects for better representing use-case complexities, and its potential to leverage the hidden information in a sensor series, which is partly realised already in other fields and products such as ChatGPT. Existing scientific studies in the water sector show the prospects of machine learning tools for data quality assurance. However, those studies are still rare and have not challenged the expected capacity limit until now.
+
+Beyond this novel technique
+
+Thinking beyond machine learning and the water sector, a wider challenge in the data quality assurance field is substantiating best practices. The large number and variety of conducted studies (including numerous datasets) provide a nuanced picture on methods and usage. Despite best efforts, it may be the case that simple algorithms perform almost as well as sophisticated ones. For practitioners, it is therefore advisable to rely on less complex methods. This insight contradicts the prevailing view and human working practices aimed at achieving better results for complex problems through more &gt;
+
+December 2025 | The Source | 21
+
+Digital 66 The algorithm itself 8 Use-case and model complexity 3 7 _ | eee oo® is just the skeleton Ze 3 @ ~ teveragngot . 8 S| 8 information in data eon i Leveraging of uncurated data ae ag |&quot; So &gt;
+
+Research focus
+
+SOlutig 7 “tions Review findings
+
+Fig. 2 Benefits of using machine learning for data quality assurance (adaption of paper’s figure)
+
+Model comparison to reveal differences
+
+‘ML model comparison
+
+Ce
+
+Determining.
+
+model performance Obtaining ground truth data
+
+Conditions
+
+Ground truth
+
+Research focus
+
+Fig. 3 Prerequisites for using machine learning in data quality assurance (adaption of paper’s figure)
+
+sophisticated methods and comes at a time when we are seeing increasingly complex algorithms being developed. The authors suggest that taking into account previously unconsidered datasets and use-case constraints could contribute to the formulation of best practices. Further developments in this area could help practitioners to establish and enhance their own quality assurance pipelines.
+
+What are the prerequisites for using machine learning in data quality assurance?
+
+The use of machine learning algorithms can represent a paradigm shift compared to the use of physics-based models. Such structures can be viewed as black-box models that build trust by shedding light on some aspects of their manifestation, evaluating them against ground truth data, and coupling them to physics-based models, for example. The model’s knowledge and flesh comes from the data — the algorithm itself is just the skeleton —which makes good data quality essential. In terms of prerequisites: firstly, ground truth data is required for the evaluation of machine learning algorithms; secondly, a model’s accuracy must be examined to infer it for new data points; and thirdly, different models should be compared when choosing the best model based on the same evaluation data. In water-related research, studies are usually based on different catchment areas and scenarios, making it very difficult to compare model accuracies. It is necessary for better ways of comparing models to be established.
+
+Conclusion
+
+Machine learning has the potential to increase the degree of automation in quality control and data imputation pipelines for water sensors and other devices. Important characteristics of the technology’s potential can be broken down to better cope with real-world and data- inherited complexities; and to leverage information currently hidden in the massive amounts of data
+
+22 | The Source | December 2025
+
+recorded. To date, science has not yet been able to verify this potential. Comprehensive research on comparing different algorithms — in general and beyond the field of water — has not yet led to general model choice guidelines and this is an area that should be tackled. Prerequisites for using machine learning tools can differ from those of other technologies and should be taken into account when promoting these solutions. The broad applicability of such tools ultimately depends on how extensively further research is pursued across the various branches of the water sector and beyond, how effectively user needs are met, and the availability of the necessary personnel, infrastructure, and expertise. ©</div></section>
+  </main>
+</body>
+</html>

@@ -8,6 +8,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DOCS = ROOT / "docs"
+MONTHS = {
+    "january": 1,
+    "february": 2,
+    "march": 3,
+    "april": 4,
+    "may": 5,
+    "june": 6,
+    "july": 7,
+    "august": 8,
+    "september": 9,
+    "october": 10,
+    "november": 11,
+    "december": 12,
+}
 
 
 def title_from_slug(slug: str) -> str:
@@ -27,6 +41,17 @@ def read_page_title(index_path: Path, slug: str) -> str:
     return title
 
 
+def issue_date(slug: str) -> tuple[int, int]:
+    match = re.search(
+        r"(january|february|march|april|may|june|july|august|september|october|november|december)-(\d{4})",
+        slug,
+        flags=re.IGNORECASE,
+    )
+    if not match:
+        return (0, 0)
+    return (int(match.group(2)), MONTHS[match.group(1).lower()])
+
+
 def discover_issues(docs_dir: Path) -> list[dict[str, str]]:
     issues: list[dict[str, str]] = []
     for child in sorted(docs_dir.iterdir(), key=lambda path: path.name.lower()):
@@ -35,37 +60,60 @@ def discover_issues(docs_dir: Path) -> list[dict[str, str]]:
         index_path = child / "index.html"
         if not index_path.exists():
             continue
+        year, month = issue_date(child.name)
         issues.append(
             {
                 "slug": child.name,
                 "title": read_page_title(index_path, child.name),
                 "path": f"{child.name}/",
+                "year": year,
+                "month": month,
             }
         )
-    return issues
+    return sorted(
+        issues,
+        key=lambda issue: (issue["year"], issue["month"], issue["slug"]),
+        reverse=True,
+    )
 
 
 def render_index(issues: list[dict[str, str]]) -> str:
-    issue_items = []
+    issue_groups: list[str] = []
+    issues_by_year: dict[int, list[dict[str, str]]] = {}
     for issue in issues:
-        title = html.escape(issue["title"])
-        path = html.escape(issue["path"])
-        slug = html.escape(issue["slug"])
-        issue_items.append(
-            f"""        <li class="issue">
+        issues_by_year.setdefault(issue["year"], []).append(issue)
+
+    for year, year_issues in issues_by_year.items():
+        issue_items = []
+        for issue in year_issues:
+            title = html.escape(issue["title"])
+            path = html.escape(issue["path"])
+            slug = html.escape(issue["slug"])
+            issue_items.append(
+                f"""          <li class="issue">
           <a href="{path}">{title}</a>
           <p>GitHub Pages path: <code>/{slug}/</code></p>
         </li>"""
+            )
+        year_label = str(year) if year else "其他"
+        year_items_html = "\n".join(issue_items)
+        issue_groups.append(
+            f"""        <section class="year-group">
+          <h2>{year_label}</h2>
+          <ul class="issue-list">
+{year_items_html}
+          </ul>
+        </section>"""
         )
 
-    if not issue_items:
-        issue_items.append(
-            """        <li class="issue">
+    if not issue_groups:
+        issue_groups.append(
+            """        <section class="year-group">
           <p>尚未發布任何雜誌期別。</p>
-        </li>"""
+        </section>"""
         )
 
-    issues_html = "\n".join(issue_items)
+    issues_html = "\n".join(issue_groups)
     return f"""<!doctype html>
 <html lang="zh-Hant">
 <head>
@@ -113,6 +161,12 @@ def render_index(issues: list[dict[str, str]]) -> str:
     }}
     .subtitle {{ margin: 0; color: var(--muted); }}
     main {{ padding: 28px 0 56px; }}
+    .year-group + .year-group {{ margin-top: 28px; }}
+    h2 {{
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }}
     .issue-list {{
       display: grid;
       gap: 14px;
@@ -146,9 +200,9 @@ def render_index(issues: list[dict[str, str]]) -> str:
   </header>
   <main>
     <div class="wrap">
-      <ul class="issue-list">
+      <div class="issue-years">
 {issues_html}
-      </ul>
+      </div>
     </div>
   </main>
 </body>
