@@ -65,9 +65,9 @@ docs/source-april-2026-magazine-site/index.html
 docs/source-july-2026-magazine-site/index.html
 ```
 
-The July 2026 site was published in commit `bdbfdb5` (`Publish Source July 2026 magazine site`). At the time of this update, local `main`, `origin/main`, and `origin/HEAD` point to that commit.
+The July 2026 site was published in commit `bdbfdb5` (`Publish Source July 2026 magazine site`).
 
-The Source December 2025 site was added on 2026-09-08 using the same established `docs/<issue-slug>/` publishing model.
+The Source December 2025 site was published in commit `69c93d0` (`Publish Source December 2025 magazine site`) on 2026-09-08 using the same established `docs/<issue-slug>/` publishing model.
 
 Future issue examples:
 
