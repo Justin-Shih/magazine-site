@@ -1,71 +1,70 @@
 # Next Issue Publishing Template
 
-Use this checklist when publishing a new magazine issue into `magazine-site`.
+Use this checklist only after a new issue has been built and validated in:
+
+`C:\Justin\Codex\magazine-july-2026-work`
+
+This is the existing `Justin-Shih/magazine-site` GitHub Pages publishing procedure, not a separate workflow.
 
 ## Naming
 
-Use one stable issue slug per magazine issue:
+Use the canonical issue ID plus `-magazine-site`:
 
 ```text
-<magazine-name>-<month>-<year>-magazine-site
+Canonical issue ID: source-december-2025
+Pages site slug:   source-december-2025-magazine-site
 ```
 
-Examples:
+The public URL is:
 
 ```text
-source-april-2026-magazine-site
-source-may-2026-magazine-site
-source-june-2026-magazine-site
+https://justin-shih.github.io/magazine-site/<issue-id>-magazine-site/
 ```
 
-If the magazine name is not Source, replace the first word:
+## Publish
 
-```text
-another-magazine-july-2026-site
-```
-
-## Publish Flow
-
-1. Place the new PDF and update `config/articles.json` for the new issue.
-2. Generate local article outputs:
+1. In the canonical project, confirm the issue site and cross-issue index pass their validators.
+2. Confirm `docs/issues/<issue-id>/index.html` exists.
+3. Run the established safe publishing entry:
 
 ```powershell
-python scripts/run_mvp.py
+python scripts\publish_site.py --issue-id <issue-id>
 ```
 
-3. Publish into a new issue folder:
-
-```powershell
-python scripts/publish_site.py --site-slug source-may-2026-magazine-site
-```
-
-4. Confirm the generated issue folder exists:
+4. In this Pages repository, confirm these outputs:
 
 ```text
-docs/source-may-2026-magazine-site/index.html
+docs/<issue-id>-magazine-site/index.html
+docs/<issue-id>-magazine-site/articles/
+docs/index.html
+docs/.nojekyll
 ```
 
-5. Confirm `docs/index.html` includes the new issue. It is refreshed automatically by `publish_site.py`.
-6. Check the website locally from the `docs/` folder before committing.
-7. Commit and push:
+5. Verify the root index is grouped by year newest to oldest, with issues newest to oldest inside each year.
+6. Open the root and issue pages locally. Verify every article link, image, title, and mobile/desktop layout.
+7. Check total and largest file sizes. Do not publish a file at or above GitHub's 100 MB hard limit.
+8. Review and commit only the intended public files:
 
 ```powershell
 git status
-git add README.md config scripts docs NEXT_ISSUE_PUBLISHING_TEMPLATE.md
-git commit -m "Publish Source May 2026 magazine site"
+git diff --check
+git add docs/index.html docs/<issue-id>-magazine-site
+git commit -m "Publish <issue name> magazine site"
 git push origin main
 ```
 
-8. Verify the public URLs after GitHub Pages deploys:
+9. Verify both public URLs return HTTP 200 and contain the expected issue link and article count:
 
 ```text
 https://justin-shih.github.io/magazine-site/
-https://justin-shih.github.io/magazine-site/source-may-2026-magazine-site/
+https://justin-shih.github.io/magazine-site/<issue-id>-magazine-site/
 ```
 
 ## Rules
 
-- Do not publish a new issue directly into `docs/`.
-- Do not replace `docs/index.html` by hand unless `scripts/update_magazine_index.py` cannot run.
-- Keep each issue self-contained under `docs/<issue-slug>/`.
-- Keep `magazine-site` as the category-level entrance.
+- Do not publish a new issue directly into the `docs/` root.
+- Do not create another GitHub Pages workflow or repository.
+- Do not bypass the canonical issue-site and index validators.
+- Do not commit source PDFs, OCR working files, NotebookLM private routing data, credentials, tokens, or private workflow state.
+- Do not commit or push without explicit publication authorization.
+- Keep each issue self-contained under `docs/<issue-id>-magazine-site/`.

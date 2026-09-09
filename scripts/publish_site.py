@@ -23,6 +23,16 @@ def copy_site(source: Path, dest: Path) -> None:
     shutil.copytree(source, dest)
 
 
+def issue_destination(dest_root: Path, site_slug: str) -> Path:
+    if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", site_slug):
+        raise ValueError("site slug must contain only lowercase letters, numbers, and single hyphens")
+    root = dest_root.resolve()
+    dest = (root / site_slug).resolve()
+    if root not in dest.parents:
+        raise ValueError(f"site destination must stay inside {root}")
+    return dest
+
+
 def linked_article_pages(dest: Path) -> set[str]:
     index_path = dest / "index.html"
     text = index_path.read_text(encoding="utf-8")
@@ -128,7 +138,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Publish generated static site to docs/ for GitHub Pages.")
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     parser.add_argument("--dest", type=Path, default=DEFAULT_DEST)
-    parser.add_argument("--site-slug", help="Optional issue-level folder under docs/, for example source-april-2026-magazine-site.")
+    parser.add_argument(
+        "--site-slug",
+        required=True,
+        help="Issue-level folder under docs/, for example source-april-2026-magazine-site.",
+    )
     parser.add_argument("--commit", action="store_true", help="Commit docs/ changes when git is available.")
     parser.add_argument("--push", action="store_true", help="Push after committing. Implies --commit.")
     parser.add_argument("--message", default="Publish generated site")
@@ -136,7 +150,10 @@ def main() -> int:
 
     source = args.source if args.source.is_absolute() else (ROOT / args.source)
     dest_root = args.dest if args.dest.is_absolute() else (ROOT / args.dest)
-    dest = dest_root / args.site_slug if args.site_slug else dest_root
+    try:
+        dest = issue_destination(dest_root, args.site_slug)
+    except ValueError as exc:
+        parser.error(str(exc))
 
     copy_site(source.resolve(), dest.resolve())
     copy_publish_assets(dest.resolve())

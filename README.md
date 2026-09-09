@@ -4,9 +4,9 @@ This repository is the stable GitHub Pages home for magazine website publishing.
 
 Each magazine issue is published into its own folder under `docs/`, so future issues do not overwrite the root magazine index.
 
-The published issues currently include the December 2025, April 2026, and July 2026 issues of *The Source* magazine.
+The published issues currently include the July 2026, April 2026, and December 2025 issues of *The Source* magazine.
 
-The local pipeline turns magazine PDFs into:
+The separate canonical processing workspace turns magazine PDFs into:
 
 - bilingual static web pages
 - one page per selected article
@@ -24,37 +24,37 @@ Current public URLs:
 
 ```text
 https://justin-shih.github.io/magazine-site/
-https://justin-shih.github.io/magazine-site/source-december-2025-magazine-site/
-https://justin-shih.github.io/magazine-site/source-april-2026-magazine-site/
 https://justin-shih.github.io/magazine-site/source-july-2026-magazine-site/
+https://justin-shih.github.io/magazine-site/source-april-2026-magazine-site/
+https://justin-shih.github.io/magazine-site/source-december-2025-magazine-site/
 ```
 
-Local generated site before publishing:
+Canonical generated issue site before publishing:
 
 ```text
-output/site/index.html
+C:\Justin\Codex\magazine-july-2026-work\docs\issues\<issue-id>\index.html
 ```
 
 The `docs/.nojekyll` file is included so GitHub Pages serves the static files directly without Jekyll processing.
 
 ## Main Commands
 
-Regenerate all article outputs and the local website:
+Content processing and validation run in:
 
-```powershell
-python scripts/run_mvp.py
+```text
+C:\Justin\Codex\magazine-july-2026-work
 ```
 
-Regenerate a single phase:
+After an issue passes the local site checks, prepare it in this existing Pages repository from the canonical project:
 
 ```powershell
-python scripts/run_mvp.py --phase 5
+python scripts\publish_site.py --issue-id <issue-id>
 ```
 
-Publish the generated website into the current issue folder and refresh the magazine index:
+The canonical wrapper calls this repository's publisher with an explicit source and safe issue slug. For direct recovery use only:
 
 ```powershell
-python scripts/publish_site.py --site-slug source-april-2026-magazine-site
+python scripts\publish_site.py --source "C:\Justin\Codex\magazine-july-2026-work\docs\issues\<issue-id>" --site-slug <issue-id>-magazine-site
 ```
 
 For the next issue, copy the checklist in:
@@ -69,12 +69,6 @@ Refresh the root magazine index only:
 python scripts/update_magazine_index.py
 ```
 
-Prepare NotebookLM-ready Markdown sources:
-
-```powershell
-python scripts/prepare_notebooklm_package.py
-```
-
 ## Existing GitHub Website
 
 This project already uses the GitHub repository
@@ -83,15 +77,15 @@ This project already uses the GitHub repository
 The completed publishing arrangement is:
 
 ```text
-local output/site/
-  -> scripts/publish_site.py
+canonical docs/issues/<issue-id>/
+  -> this repository's scripts/publish_site.py
   -> docs/<issue-slug>/
   -> scripts/update_magazine_index.py refreshes docs/index.html
   -> commit and push to origin/main
   -> GitHub Pages serves the committed docs/ files
 ```
 
-`docs/index.html` is the public cross-issue entrance. Each issue remains self-contained under `docs/<issue-slug>/`, and `docs/.nojekyll` makes GitHub Pages serve the generated static files directly. GitHub does not run the PDF, OCR, translation, summarization, or NotebookLM preparation stages; those are completed locally before the static website is committed.
+`docs/index.html` is the public cross-issue entrance. Each issue remains self-contained under `docs/<issue-slug>/`, and `docs/.nojekyll` makes GitHub Pages serve the generated static files directly. `--site-slug` is required and accepts only lowercase letters, numbers, and single hyphens so publication cannot replace the `docs/` root or escape it. GitHub does not run the PDF, OCR, translation, summarization, or NotebookLM preparation stages; those are completed in the canonical workspace before the static website is committed.
 
 The same arrangement is used for the completed December 2025, April 2026, and July 2026 publications. The July publication is recorded by commit `bdbfdb5` (`Publish Source July 2026 magazine site`) on `main`.
 
@@ -105,29 +99,6 @@ NEXT_ISSUE_PUBLISHING_TEMPLATE.md
 ## Output Structure
 
 ```text
-output/site/
-  index.html
-  articles/
-  topics/
-
-output/articles/
-  001-.../
-    summary.md
-    article.pdf
-    crops/
-    ocr/
-
-output/notebooklm/
-  sources/
-  sources-manifest.json
-  index.md
-  notebook-outline.md
-  upload-order.md
-  manual-import-guide.md
-  notebooklm-prompts.md
-  automated-import-plan.md
-  quality-report.md
-
 docs/
   index.html
   source-december-2025-magazine-site/
@@ -146,25 +117,8 @@ docs/
   .nojekyll
 ```
 
-## Configuration
-
-Article definitions, crop boxes, titles, summaries, and table-of-contents links are managed in:
-
-```text
-config/articles.json
-```
-
-Page crop boxes use:
-
-```text
-[left, top, right, bottom]
-```
-
-as percentages of the extracted full-page image.
-
 ## Notes
 
-- The working PDF and OCR process are best run on a local disk, not directly inside a cloud-synced folder, to avoid file locks and slow sync behavior.
+- Source PDFs, OCR, NotebookLM material, credentials, and private workflow files must not be added to this repository.
 - `docs/index.html` is the magazine issue index and is generated by `scripts/update_magazine_index.py`.
 - Each issue folder under `docs/` is a complete static website for one magazine issue.
-- NotebookLM upload is prepared but not automatically performed unless a target existing notebook is selected.

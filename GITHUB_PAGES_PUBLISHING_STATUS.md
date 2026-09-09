@@ -1,6 +1,6 @@
 # GitHub Pages Publishing Status
 
-Last updated: 2026-09-08
+Last updated: 2026-09-09
 
 ## Repository Status
 
@@ -37,7 +37,7 @@ local configuration and credentials
 
 ## Size Baseline
 
-The original `docs/` package contained approximately 134 files and 113 MB in total. Its largest file was approximately 5.09 MB, below GitHub's individual 100 MB file limit.
+The current `docs/` package contains 171 files and approximately 138.18 MB in total. Its largest file is the Source December 2025 cover at approximately 18.85 MB, below GitHub's individual 100 MB file limit.
 
 Recheck file sizes before publishing each new issue rather than assuming this historical baseline is still current.
 
@@ -83,14 +83,13 @@ The root index is:
 docs/index.html
 ```
 
-Use the existing scripts for future issues:
+From the canonical processing workspace, use the existing safe publishing entry:
 
 ```powershell
-python scripts/publish_site.py --site-slug <issue-slug>
-python scripts/update_magazine_index.py
+python scripts\publish_site.py --issue-id <issue-id>
 ```
 
-Use `NEXT_ISSUE_PUBLISHING_TEMPLATE.md` as the step-by-step checklist.
+It delegates to this repository's publisher with an explicit source and `<issue-id>-magazine-site` slug, updates `docs/index.html`, and does not commit or push. Use `NEXT_ISSUE_PUBLISHING_TEMPLATE.md` for validation, commit, push, and HTTP verification.
 
 ## Git Privacy Cleanup — 2026-07-22
 
