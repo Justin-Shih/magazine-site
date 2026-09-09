@@ -101,28 +101,28 @@ def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
     )
 
 
-def maybe_git_publish(commit_message: str, push: bool) -> None:
+def maybe_git_publish(commit_message: str, push: bool) -> bool:
     if not git_available():
         print("Git is not available in PATH; skipped git commit/push.")
-        return
+        return False
 
     status = run_git(["status", "--short"])
     if status.returncode != 0:
         print(status.stderr.strip() or status.stdout.strip())
         print("Skipped git commit/push because this folder is not a ready git repo.")
-        return
+        return False
 
     run_git(["add", "docs", "scripts/publish_site.py", "scripts/update_magazine_index.py", "README.md"])
     status_after_add = run_git(["status", "--short"])
     if not status_after_add.stdout.strip():
         print("No git changes to commit.")
-        return
+        return True
 
     commit = run_git(["commit", "-m", commit_message])
     if commit.returncode != 0:
         print(commit.stderr.strip() or commit.stdout.strip())
         print("Git commit did not complete.")
-        return
+        return False
     print(commit.stdout.strip())
 
     if push:
@@ -130,8 +130,9 @@ def maybe_git_publish(commit_message: str, push: bool) -> None:
         if pushed.returncode != 0:
             print(pushed.stderr.strip() or pushed.stdout.strip())
             print("Git push did not complete.")
-            return
+            return False
         print(pushed.stdout.strip())
+    return True
 
 
 def main() -> int:
@@ -165,7 +166,8 @@ def main() -> int:
     print(f"GitHub Pages folder: {dest_root.resolve()}")
 
     if args.commit or args.push:
-        maybe_git_publish(args.message, args.push)
+        if not maybe_git_publish(args.message, args.push):
+            return 1
     return 0
 
 
