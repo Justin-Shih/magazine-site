@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>數位孿生：從概念到實作 | Digital twins: from concept to implementation</title>
-  <style>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>數位孿生：從概念到實作 | Digital twins: from concept to implementation</title><style>
 :root { --paper:#f8f6f1; --ink:#17212b; --muted:#657083; --line:#d8dedf; --accent:#0b6f78; --panel:#fff; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:"Segoe UI","Microsoft JhengHei",Arial,sans-serif; line-height:1.72; }
@@ -28,116 +22,76 @@ h2 { font-size:22px; line-height:1.3; margin:0 0 10px; letter-spacing:0; }
 .nav { padding-top:18px; }
 .nav a,.source-link a { color:var(--accent); font-weight:700; text-decoration:none; }
 @media(max-width:820px){ .grid{grid-template-columns:1fr} h1{font-size:27px} }
-</style>
-</head>
-<body>
-  <header><div class="wrap masthead">
-    <p class="kicker">Source · April 2025 · p.38-40</p>
-    <h1>數位孿生：從概念到實作<br><span class="en">Digital twins: from concept to implementation</span></h1>
-    <p class="subtitle">數位水務 / Digital</p>
-    <p class="source-link"><a href="https://thesourcemagazine.org/issues/issue-38/" rel="noopener noreferrer">The Source官方期別頁（Issue 38）</a></p>
-  </div></header>
-  <main class="wrap">
-    <div class="nav"><a href="../index.html">← 返回目錄 / Back to contents</a></div>
-    <section class="article"><h2>中文完整摘要說明</h2><p>文章說明水務數位孿生須連結實體資產、虛擬模型與持續資料流，並強調GIS、SCADA、維護系統、感測器、資料生命週期與人員採用是導入成功的共同條件。</p></section>
-    <section class="article"><h2>中文全文翻譯</h2><div class="body">本文把數位孿生界定為可反映實體系統行為、支援情境模擬的虛擬模型。水務應用需先釐清目的與系統複雜度，再整合GIS、監控系統、維護資料、感測器與外部預報；資料正確性、模型維護、使用者介面及人員參與缺一不可。文章特別強調數位孿生是人、流程與技術的協作，不是單純購置軟體。</div></section>
-    <section class="article"><h2>Original Full Text</h2><div class="body">Digital pel
+</style></head>
+<body><header><div class="wrap masthead"><p class="kicker">Source · April 2025 · p.38-40</p><h1>數位孿生：從概念到實作<br><span class="en">Digital twins: from concept to implementation</span></h1><p class="subtitle">數位水務 / Digital</p><p class="source-link"><a href="https://thesourcemagazine.org/issues/issue-38/" rel="noopener noreferrer">The Source官方期別頁（Issue 38）</a></p></div></header>
+<main class="wrap"><div class="nav"><a href="../index.html">← 返回目錄 / Back to contents</a></div><section class="article" data-content-status="full-translation"><h2>中文重點整理</h2><p>文章說明水務數位孿生須連結實體資產、虛擬模型與持續資料流，並強調GIS、SCADA、維護系統、感測器、資料生命週期與人員採用是導入成功的共同條件。</p></section><section class="article" data-content-status="full-translation"><h2>中文全文翻譯</h2><div class="body zh-body"># 數位孿生：從概念到實作
 
-_fromicene
+數位孿生正協助公用事業更深入理解系統，並最佳化改善工作。Pilar Conejos 說明，要成功開發及使用數位孿生需要哪些條件。
 
-implementat
+人口增加與氣候變遷，使城市對更永續、更具韌性的需求日益升高。在此脈絡下，知情決策應採用結合即時感測資料蒐集、進階分析與模型能力的工具，以模擬「如果……會如何」的情境。特定系統的「數位」或「虛擬」孿生，可以滿足這些需求。
 
-“Seeds
+數位孿生（digital twin，DT）理念並不新穎。美國國家航空暨太空總署（NASA）自 1960 年代起，因必須遠端操作與維護系統而使用這個概念；當時建立的孿生是實體而非虛擬的。作為其實用性的例證，NASA 正是憑藉地球上的孿生系統，成功執行阿波羅 13 號月球登陸任務的救援。
 
-Digital twins,are enabling utilities to,better nfderstand inet systems iid optimise improvements. Pilar Conejos explains what is evelop and use a digital twin with ultimate success.
+DT 概念於 2002 年因國際知名專家 Michael Grieves 的工作而受到重視。最初，DT 的目的在於最佳化產品在設計與製造程序中的生命週期，以及其使用期間所需的後續維護。依 Grieves 的說法，虛擬孿生模型必須包含三個主要部分：實體資產、虛擬模型，以及將虛擬空間與真實空間連結起來的資料與資訊連線。
 
-j here is a growing need for more sustainable
+DT 不僅適用於產業，也可在城市管理脈絡下開發與運用，特別是在飲用水供應系統中。大部分系統雖已在工業部門實施，尤其是製造、航太與國防產業，但水務部門的使用量亦顯著增加。
 
-| and resilient cities because of increasing
+DT 應在虛擬模型中複製真實系統的行為，成為進行實驗的基礎；也就是一份可在任何條件下進行任何模擬的現實虛擬副本。就水系統而言，完整 DT 將虛擬複製從水源、到使用者水龍頭、再到水回歸自然環境為止的所有程序。DT 的重大優勢是能提供完整且整體性的視野。因此，建置整合水循環的 DT 應是理想的最終目標；它可促成更有效率的決策，讓使用者考量所有變數，了解決策在各項程序上的整體影響。例如，DT 可顯示漏水率改善或新增基礎設施，會如何影響供水壓力與水質、管網操作、整體能源消耗及原水處理等服務品質。然而，水循環內程序數量多且複雜，使這項工作並不像表面看來那樣直接。
 
-ie] population and climate change. Within this
+## 部署策略
 
-context, informed decision-making should employ advanced tools that combine real time sensor data gathering, advanced analytics, and model- based capabilities to simulate ‘what if’ scenarios.
+其中一項策略，是為水循環的每個階段──飲用水處理、供水管網、污水管網與污水處理──或其中特定程序建立 DT；最終目標是將所有 DT 互連，因為部分 DT 程序的輸出可作為其他程序的輸入。然而，DT 必須建立於穩固的技術基礎上，才能確保可擴充性。
 
-A ‘digital’ or ‘virtual’ twin of a defined system can fulfil these requirements.
+DT 可用於多種目的。它可以處理水系統管理的眾多問題，包括能源最佳化、水質改善、降低水損、及早偵測異常，以及緊急情況下的決策支援。無論用途為何，DT 都能使人更了解系統運作，協助改善其操作與設計，以達成設定的不同目標。
 
-The digital twin (DT) philosophy is not new. It has been used since the 1960s by the National Aeronautics and Space Administration (NASA), USA, because of the need to remotely operate and maintain systems — although the twin developed then was physical rather than virtual. As an example of its usefulness, NASA was able to successfully perform the rescue of the Apollo 13 lunar landing mission thanks to its twin on Earth.
+部署 DT 前，必須界定欲達成的目標。為此，充分探究水公司面臨的挑戰與需求十分重要。完成分析後，便可界定 DT 的範圍──也就是應納入 DT 的水循環或其中部分，以及它應提供的能力。必須強調，DT 可以演進與成長；因此，一個 DT 可以在部署初期針對特定目標（例如早期預警系統或能源最佳化）與範圍（例如供水管網，甚至僅是輸水管線系統）開始，之後再擴展至回應更多目標與更廣範圍。
+
+## 盤點資料與工具
+
+下一步是界定所需資料，這取決於 DT 要涵蓋的範圍與目標。資料類型可以是靜態資料（與實體資產相關）或動態資料（即時資料）。多數情況下，它們位於公司內彼此孤立的不同系統，例如地理資訊系統（GIS）、監督控制與資料擷取系統（SCADA）、電腦化維護管理系統（CMMS），或外部系統，例如天氣預報。若情況並非如此，便應制定計畫蒐集必要資料。DT 必須奠基於穩固基礎，因此此時需要一個能整合不同來源所有資料的平台，並建立程序，確保資料從取得到在平台上彙整的生命週期。
+
+同樣重要且不可忽略的是，公用事業必須建立程序，確保 GIS 或 CMMS 等系統中「人工」資料的蒐集，也確保感測器傳送的自動資訊蒐集。後者尤其必須正確選擇感測器、通訊系統並妥善維護。若以錯誤資料建置並持續餵養系統，就不可能建成真實系統的 DT 鏡像。
+
+DT 所要涵蓋的目標及欲複製程序的複雜性，也會決定模擬模型；模型可採物理基礎（如水力模型）、資料基礎，或兩者兼具。不論採取何種模型，平台都必須能建立或匯入模型並將其連接到資料，確保連線即時且能長期維持。同時也必須界定 DT 所提供的資訊、互動方式與使用者介面。
+
+在整個過程中，不能忘記 DT 必須由人採用，因此人員從一開始就必須參與。事實上，採用 DT 必須成為公用事業數位轉型的一部分，或是其結果；這意味著整個公用事業需要新的工作方式。
+
+水務部門所面臨挑戰的規模，只能透過技術、工程原則，以及人員的經驗與專業相結合來克服。DT 不僅關乎技術，也極為關乎人員與程序。DT 的獨特性在於提供整體視野，匯集不同技術、資料，更重要的是促進透明與協作，打破資料與知識的孤島。
+
+作者 Pilar Conejos 博士為 IWA 數位水計畫指導委員會成員，現任 Idrica 數位孿生產品經理，曾負責 Global Omnium 大瓦倫西亞地區的管網控制與操作；她亦為西班牙瓦倫西亞理工大學兼任教授。
+
+作者感謝 Global Omnium 與 Idrica 提供機會，讓她能將這項技術與理念付諸實踐。</div></section><section class="article" data-content-status="official-web"><h2>英文官方網頁原文</h2><p class="source-link"><a href="https://thesourcemagazine.org/digital-twins-from-concept-to-implementation/" rel="noopener noreferrer">The Source官方網頁原文（查詢日期：2026-09-10）</a></p><div class="body">Digital twins are enabling utilities to better understand their systems and optimise improvements. Pilar Conejos explains what is required to develop and use a digital twin with ultimate success.
+
+There is a growing need for more sustainable and resilient cities because of increasing population and climate change. Within this context, informed decision-making should employ advanced tools that combine real time sensor data gathering, advanced analytics, and model-based capabilities to simulate ‘what if’ scenarios. A ‘digital’ or ‘virtual’ twin of a defined system can fulfil these requirements.
+
+The digital twin (DT) philosophy is not new. It has been used since the 1960s by the National Aeronautics and Space Administration (NASA), USA, because of the need to remotely operate and maintain systems – although the twin developed then was physical rather than virtual. As an example of its usefulness, NASA was able to successfully perform the rescue of the Apollo 13 lunar landing mission thanks to its twin on Earth.
 
 The DT concept gained recognition in 2002 through the work of the internationally renowned expert Michael Grieves. Initially, the DT aimed to optimise the life-cycle of a product in relation to its design and manufacture process, together with the subsequent maintenance required during its lifetime. According to Grieves, a virtual twin model must contain three main parts: the physical assets, a virtual model, and the connections of data and information that tie virtual and real spaces together.
 
-DTs are not only useful in industry; they can also be developed and exploited within a city management context, particularly in the drinking water supply
+DTs are not only useful in industry; they can also be developed and exploited within a city management context, particularly in the drinking water supply system. While the majority of these systems have been implemented in the industrial sector, particularly in the manufacturing, aerospace and defence industries, there has been a notable increase in their use in the water sector.
 
-38 | The Source | April 2025
+A DT should replicate real system behaviour in a virtual model, serving as the basis for experimentation – i.e., a virtual copy of reality that allows any simulation under any condition to be performed. In the case of water systems, a complete DT would be a virtual replica of all the processes that take place from the water source to the user’s tap and, finally, to the natural environment, where the water is returned. The great advantage of a DT is the complete and holistic vision it provides, so having a DT of the integral water cycle would be the desirable final objective, enabling more efficient decision-making that takes into account all of the variables involved, knowing the overall impact of decisions across all processes. For example, a DT can demonstrate how an improvement in the level of leakage or the addition of new infrastructure would affect the quality of the service provided in terms of water pressures and water quality, network operation, overall energy consumption and raw water treatment. However, this is not as straightforward as it may seem because of the number and complexity of the processes that take place in the water cycle.
 
-system. While the majority of these systems have been implemented in the industrial sector, particularly in the manufacturing, aerospace and defence industries, there has been
+Deployment strategy
 
-a notable increase in their use in the water sector.
+One strategy is to create a DT of each stage of the water cycle (drinking water treatment, water distribution networks, wastewater networks and wastewater treatment) or specific processes within them, with the ultimate aim of interconnecting all the DTs, considering that outputs of some DT processes can be used as inputs for others. However, it is essential that the DT is built on a solid technological base in order to ensure scalability.
 
-ADT should replicate real system behaviour in a virtual model, serving as the basis for experimentation —i.e., a virtual copy of reality that allows any simulation under any condition to be performed. In the case of water systems, a complete DT would be a virtual replica of all the processes that take place from the water source to the user’s tap and, finally, to the natural environment, where the water is returned. The great advantage of a DT is the complete and holistic vision it provides, so having a DT of the integral water cycle would be the desirable final objective, enabling more efficient decision-making that takes into account all of the variables involved, knowing the overall impact of decisions across all processes. For example, a DT can demonstrate how an improvement
+A DT can be used for a variety of purposes. Indeed, it can be used to solve and address many of the problems related to water systems management, including, among others, energy optimisation, water quality improvement, water loss reduction, early anomaly detection, and decision support in emergency conditions. In any case, a DT will always enable better understanding of a system’s operation, helping to improve its operation and design to achieve the different objectives set.
 
-Papa Ppa ne
+Before deploying a DT it is essential to define achievement objectives. To do so, it is important that the water company’s challenges and needs are fully explored. Following this analysis the scope of the DT can be defined – i.e., the water cycle or the part of it that should be included in the DT, as well as the capabilities it should offer. It is important to highlight that DTs can evolve and grow. So, a DT may start deployment with some specific objectives (e.g., early warning systems or energy optimisation) and scope (e.g., the water distribution network or even just the transmission line system) and develop to respond to further objectives and broader scope.
 
-It is essential to define achievement objectives
+Audit data and tools
 
-in the level of leakage or the addition of new infrastructure would affect the quality of the service provided in terms of water pressures and water quality, network operation, overall energy consumption and raw water treatment. However, this is not as straightforward as it may seem because of the number and complexity of the processes that take place in the water cycle.
-
-Deployment :
-
-One strategy is to create a DT of each stage of the water cycle (drinking water treatment, water distribution networks, wastewater networks and wastewater treatment) or specific processes within them, with the ultimate
-
-aim of interconnecting all the DTs,
-
-considering that outputs of some DT processes can be used as inputs for others. However, it is essential
-
-that the DT is built on a solid technological base in order to ensure scalability.
-
-ADT can be used for a variety of purposes. Indeed, it can be used to solve and address many of the problems related to water systems management, including, among others, energy optimisation, water quality improvement, water loss reduction, early anomaly detection, and decision support in emergency conditions. In any case, a DT will always enable better understanding of a system’s operation, helping to improve its operation and design to achieve the different objectives set.
-
-Before deploying a DT it is essential to define achievement objectives. To do so, it is important that the water company’s challenges and needs are fully explored. Following this analysis the scope of the DT can be defined — i.e., the water cycle or the part of it that should be included in the DT, as well as the capabilities it should offer. It is important to highlight that DTs can evolve and grow. So, a DT may start deployment with some specific objectives (e.g., early warning systems or energy optimisation) and scope (e.g., the water distribution network or even just the transmission line system) and develop to respond to further objectives and broader scope.
-
-The next step is to define the data required, which will depend on the scope and objectives to be covered by the DT. The type of data required can be static (related to
-
-physical assets) or dynamic (real time data). Most of ~
-
-April 2025 | The Source | 39
-
-the time they are located in different isolated systems within the company (e.g., Geographic Information System, Supervisory Control and Data Acquisition, Computerised Maintenance Management System) or in external systems (e.g., weather forecasts). If this is not the case, a plan should be put in place to collect the necessary data. As the DT must be built on solid foundations, it is necessary at this point to have a platform capable of integrating all the data coming from the different sources, and to have procedures in place to guarantee the life-cycle of the data, from its acquisition to its consolidation on the platform.
+The next step is to define the data required, which will depend on the scope and objectives to be covered by the DT. The type of data required can be static (related to physical assets) or dynamic (real time data). Most of the time they are located in different isolated systems within the company (e.g., Geographic Information System, Supervisory Control and Data Acquisition, Computerised Maintenance Management System) or in external systems (e.g., weather forecasts). If this is not the case, a plan should be put in place to collect the necessary data. As the DT must be built on solid foundations, it is necessary at this point to have a platform capable of integrating all the data coming from the different sources, and to have procedures in place to guarantee the life-cycle of the data, from its acquisition to its consolidation on the platform.
 
 It is important to stress, and not to overlook, the importance of having procedures in place in the utility to ensure the collection of ‘manual’ data in systems such as GIS or CMMS, as well as the collection of automatic information, such as that sent by sensors, where the correct choice of sensor, communication system and maintenance is particularly important. It is impossible to build a DT mirror of the real system if it has been built and continuously fed with incorrect data.
 
-40 | The Source | April 2025
-
-‘
-
-The objectives to be covered by the DT and the complexity of the process to be replicated will also define the simulation model, which may be physics- based (hydraulic models), data-based or both. In whichever case, a platform must enable models to be built or imported and connected to data, ensuring that the connection is live and maintained over time. It is also important to define the information that the DT will offer, its interactions and user interface.
+The objectives to be covered by the DT and the complexity of the process to be replicated will also define the simulation model, which may be physics-based (hydraulic models), data-based or both. In whichever case, a platform must enable models to be built or imported and connected to data, ensuring that the connection is live and maintained over time. It is also important to define the information that the DT will offer, its interactions and user interface.
 
 Throughout this process, it is important not to forget that the DT has to be adopted by people, so they have to be involved in the process from the beginning. In fact, the adoption of a DT must be part or a consequence of a digital transformation of the utility. This implies a new way of working across the utility.
 
-The scale of the challenges for the water sector can only be overcome by a combination of technology, engineering principles, and the experience and expertise of its people. DTs are very much about people and processes, as well as technology. A DT is unique because it provides a holistic view, bringing together different technologies, data and, most importantly, promoting transparency and collaboration, breaking down silos of data and knowledge. @
+The scale of the challenges for the water sector can only be overcome by a combination of technology, engineering principles, and the experience and expertise of its people. DTs are very much about people and processes, as well as technology. A DT is unique because it provides a holistic view, bringing together different technologies, data and, most importantly, promoting transparency and collaboration, breaking down silos of data and knowledge.
 
-Accelerating
+The author: Dr Pilar Conejos is a member of IWA’s Digital Water Programme Steering Committee. She is Digital Twin Product Manager at Idrica and was previously responsible for network control and operation for Greater Valencia at Global Omnium. She is also a part-time professor at the Universitat Politècnica de Valencia, Spain.
 
-Saroj Kumar Jha, of the World Bank, shares his insights on the measures needed to achieve global delivery of safe water and sanitation.
-
-business-as-usual scenario to achieving the
-
-sustainable development goals (SDGs) related
-
-to water would not see West Africa achieve
-
-access to a universal safe water supply until 2112, warned Saroj Kumar Jha in his Plenary Keynote at IWA’s World Water Congress &amp; Exhibition, held in Toronto, Canada, last year.
-
-This shocking figure he attributed first to a lack of global political attention. Travelling across the world in his role as Global Director and Head of Water Global Practice for the World Bank, he noted that, when meeting Prime Ministers, Presidents and Ministers of Finance, water is rarely on their agenda. With the water access gap widening rather than closing in most African countries, Jha’s concern was that, by the 2030 deadline set to achieve the SDGs, the developing world is likely to have more people without clean water and sanitation than at the beginning of this decade.
-
-Saroj Kumar Ji t IV World Wa ong hibition
-
-access
-
-Lack of investment
-
-Citing the results of the World Bank’s Public Expenditure Review, published ahead of the 10th World Water Forum in 2024, Jha highlighted the extremely low levels of investment in water from the 130 developing countries analysed. On average, the review found that the government spend on water of the countries assessed was just 1.2% of annual budget, compared with 5% on transport, 4% on agriculture, and “much larger volumes on energy”, with Jha cautioning that “there are countries in Africa and Asia that were found to have spent less than 0.5% of their annual budget on water”. His opening message to delegates was that it is extremely important “that we collectively continue to make a strong political case on why governments should invest in &gt;
-
-April 2025 | The Source | 41</div></section>
-  </main>
-</body>
-</html>
+The author is grateful to Global Omnium and Idrica for the opportunities to put this technology and philosophy into practice.</div></section></main></body></html>
